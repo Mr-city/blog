@@ -1,0 +1,105 @@
+{include file="common/header" /}
+
+<body class="layui-view-body">
+    <div class="layui-content">
+        <div class="layui-row">
+            <div class="layui-card">
+                <div class="layui-card-header">修改文章</div>
+                <form class="layui-form layui-card-body" enctype="multipart/form-data" action="{:url('article/edit')}" Method='post'>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">文章标题</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="title" value="{$article.title}" style="width: 60%;" required lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+                            <!-- <div class="layui-form-mid layui-word-aux lay-red">*</div> -->
+                        </div>
+
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">文章作者</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="author" value="{$article.author}"  placeholder="请输入文章作者" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">关键字</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="keywords" value="{$article.keywords}"  placeholder="请输入关键字" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">文章描述</label>
+                        <div class="layui-input-block">
+                            <textarea name="desc" style="width: 60%;" placeholder="请输入描述内容" class="layui-textarea">{$article.desc}</textarea>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">缩略图</label>
+                        <div class="layui-upload">
+                            <input type="file" name="pic"/>    
+                        </div>
+                        <div class="layui-input-block">
+                            {if condition="$article.pic neq ''"}
+                            <img src="__IMG__/{$article.pic}" width="120" alt="">
+                            {else}
+                            暂无缩略图
+                            {/if}
+                        </div>
+                        
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">是否推荐</label>
+                        <div class="layui-input-block">
+                            {if condition="$article.title eq '1'"}
+                            <input type="checkbox" checked name="state" lay-skin="switch" lay-text="ON|OFF">
+                            {else}
+                            <input type="checkbox" name="state" lay-skin="switch" lay-text="ON|OFF">
+                            {/if}
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">所属栏目</label>
+                        <div class="layui-input-inline">
+                            <select name="columnid">
+                                {volist name="columns" id="vo"}
+                                <option {if $vo.id == $article.columnid}selected{/if} value="{$vo.id}">{$vo.name}</option>
+                                {/volist}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">文章内容</label>
+                        <div class="layui-input-block">
+                            <textarea id="editor" name="content" style="height: 300px;">{$article.content}</textarea>
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button class="layui-btn layui-btn-blue" lay-submit lay-filter="formDemo">新增</button>
+                            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                            <a href="{:url('article/index')}"><button type="button" class="layui-btn layui-btn-primary close-item">关闭</button></a>
+                            <input type="hidden" name="id" value="{$article.id}">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="__STATIC__/assets/layui.all.js"></script>
+    <script src="__STATIC__/ueditor/ueditor.config.js"></script>
+    <script src="__STATIC__/ueditor/ueditor.all.min.js"></script>
+    <script src="__STATIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
+
+    <script>
+        var ue = UE.getEditor('editor');
+        var form = layui.form,
+            layer = layui.layer,
+            $ = layui.jquery;
+
+        $('.close-item').click(function(event) {
+            parent.layer.closeAll();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+{include file="common/header" /}
+
+<body class="layui-view-body">
+    <div class="layui-content">
+        <div class="layui-page-header">
+            <div class="pagewrap">
+                <span class="layui-breadcrumb">
+                    <a href="">首页</a>
+                    <a href="">系统</a>
+                    <a><cite>友情连接</cite></a>
+                </span>
+                <h2 class="title">友情连接</h2>
+            </div>
+        </div>
+        <div class="layui-row">
+            <div class="layui-card">
+                <div class="layui-card-body">
+                    <div class="form-box">
+                        <button class="layui-btn layui-btn-blue add-item"><i class="layui-icon">&#xe654;</i>新增</button>
+                        <table class="layui-table" lay-even="" lay-skin="line">
+                            <colgroup>
+                                <col width="100">
+                                <col width="">
+                                <col width="">
+                                <col width="30">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>标题</th>
+                                    <th>链接</th>
+                                    <th>描述</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {volist name='list' id='links'}
+                                <tr>
+                                    <td>{$links.title}</td>
+                                    <td><a href="{$links.url}" target="_blank">{$links.url}</a></td>
+                                    {if condition="$links['desc'] neq ''"}
+                                    <td>{$links.desc}</td>
+                                    {else}
+                                    <td>暂无描述</td>
+                                    {/if}
+                                    <td>
+                                        <div class="layui-table-cell laytable-cell-1-0-11"> 
+                                            <a href="{:url('links/edit',['id' => $links['id']])}" class="layui-btn layui-btn-xs lay-vs" lay-event="edit">编辑</a> 
+                                            <a href="{:url('links/del',['id' => $links['id']])}" class="layui-btn layui-btn-danger layui-btn-xs lay-hs" lay-event="del">删除</a> 
+                                        </div>
+                                    </td>
+                                </tr>
+                                {/volist}
+                            </tbody>
+                        </table>
+                        {$list|raw}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="__STATIC__/assets/layui.all.js"></script>
+    <script>
+        var element = layui.element;
+        var table = layui.table;
+        var form = layui.form;
+        var layer = layui.layer;
+        var $ = layui.jquery;
+        var laypage = layui.laypage;
+
+        $('.add-item').click(function() {
+            parent.index = layer.open({
+                type: 2,
+                title: '',
+                area: ['100%', '100%'],
+                content: '{:url("links/add",["id"=>"1"])}',
+            });
+        })
+    </script>
+
+
+</body>
+
+</html>

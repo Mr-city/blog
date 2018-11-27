@@ -1,0 +1,3538 @@
+---------------------------------------------------------------
+[ 2018-11-26T17:30:13+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/del
+[运行时间：0.088880s] [吞吐率：11.25req/s] [内存消耗：2,813.64kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '9',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'id' => 73,
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000390s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000650s ]
+[ sql ] [ SQL ] DELETE FROM `zp_user` WHERE  `id` = 73 [ RunTime:0.002501s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:30:13+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.105206s] [吞吐率：9.51req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 3,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000498s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000892s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000362s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000337s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000280s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:30:31+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.040159s] [吞吐率：24.90req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000321s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000286s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000206s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000183s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:30:32+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.044739s] [吞吐率：22.35req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000519s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000379s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000324s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000266s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:32:17+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.041123s] [吞吐率：24.32req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 0,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000384s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000337s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000248s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000283s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:32:25+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.044893s] [吞吐率：22.28req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000308s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000302s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000220s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000200s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:32:27+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.040174s] [吞吐率：24.89req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000422s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000285s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000214s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000183s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:32:28+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.061941s] [吞吐率：16.14req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000638s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000779s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000374s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000356s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000267s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:32:30+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.040943s] [吞吐率：24.42req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000356s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000345s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000277s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000259s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:32:52+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.041422s] [吞吐率：24.14req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000342s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000652s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000335s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000264s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000259s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:32:59+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.040221s] [吞吐率：24.86req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000413s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000279s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000213s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000178s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:33:01+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.042991s] [吞吐率：23.26req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000368s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000350s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000287s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000255s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:33:02+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.040298s] [吞吐率：24.82req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000298s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000283s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000327s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000289s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:33:09+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.041666s] [吞吐率：24.00req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000436s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000297s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000448s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000219s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:33:20+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.039389s] [吞吐率：25.39req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000306s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000282s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000246s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000206s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:35:33+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.043908s] [吞吐率：22.77req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 0,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000413s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000756s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000276s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000310s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000495s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:35:40+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.041493s] [吞吐率：24.10req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 0,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000314s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000283s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000220s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000201s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:35:50+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.048064s] [吞吐率：20.81req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000365s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000569s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000336s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000289s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000248s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:35:52+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.039222s] [吞吐率：25.50req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000309s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000293s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000208s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000182s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:35:53+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.043167s] [吞吐率：23.17req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000311s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000285s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000219s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000186s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:35:54+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.039644s] [吞吐率：25.22req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000334s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000280s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000205s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000201s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:37:40+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/del
+[运行时间：0.028183s] [吞吐率：35.48req/s] [内存消耗：1,888.99kb] [文件加载：65]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '8',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'id' => 1,
+)
+---------------------------------------------------------------
+[ 2018-11-26T17:37:40+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.042793s] [吞吐率：23.37req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000621s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000815s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000341s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000304s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000249s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:38:14+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.050165s] [吞吐率：19.93req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000361s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000855s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000452s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000345s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000297s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:38:19+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.048717s] [吞吐率：20.53req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000405s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000363s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000314s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000260s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:39:58+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.058528s] [吞吐率：17.09req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000391s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000679s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000314s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000297s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000226s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:40:03+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.041955s] [吞吐率：23.84req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000448s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000274s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000201s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000198s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:41:41+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.043380s] [吞吐率：23.05req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 0,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000352s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000289s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000241s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000192s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:41:45+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.049096s] [吞吐率：20.37req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000503s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000926s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000486s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000256s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000243s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:41:47+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.040531s] [吞吐率：24.67req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000307s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000281s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000259s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000244s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:42:07+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.041743s] [吞吐率：23.96req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 0,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000293s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000290s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000239s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000196s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:42:28+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.044785s] [吞吐率：22.33req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000372s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000839s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000451s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000377s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000327s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:42:31+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.040928s] [吞吐率：24.43req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000343s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000315s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000268s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000185s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:42:33+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.047473s] [吞吐率：21.06req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 0,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000335s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000380s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000262s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000208s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:42:37+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.045147s] [吞吐率：22.15req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000607s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000867s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000409s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000311s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000230s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:42:43+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.039766s] [吞吐率：25.15req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000315s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000306s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000226s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000178s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:43:00+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.040625s] [吞吐率：24.62req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000316s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000323s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000200s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000200s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:43:07+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.041560s] [吞吐率：24.06req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000324s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000406s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000301s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000314s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:44:14+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.051178s] [吞吐率：19.54req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 0,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000312s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000295s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000242s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000196s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:44:18+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.047308s] [吞吐率：21.14req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000382s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000776s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000411s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000423s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000349s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:44:21+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.040856s] [吞吐率：24.48req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000307s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000306s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000216s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000182s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:45:36+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.041466s] [吞吐率：24.12req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 0,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000294s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000285s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000244s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000221s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:45:40+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.064663s] [吞吐率：15.46req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000602s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000923s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000412s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000364s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000330s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:45:57+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.043662s] [吞吐率：22.90req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000344s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000315s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000226s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000268s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:45:59+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.045468s] [吞吐率：21.99req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000537s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000912s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000370s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000290s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000256s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:46:04+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.040907s] [吞吐率：24.45req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000389s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000375s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000269s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000199s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:47:02+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.046699s] [吞吐率：21.41req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000365s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000370s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000390s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000343s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:47:04+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.042158s] [吞吐率：23.72req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000297s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000279s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000256s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000188s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:47:06+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.045893s] [吞吐率：21.79req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000359s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000654s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000366s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000353s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000283s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:47:08+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.040541s] [吞吐率：24.67req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000441s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000738s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000322s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000270s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000221s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:47:10+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.047824s] [吞吐率：20.91req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000521s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000279s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000212s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000179s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:47:12+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.039859s] [吞吐率：25.09req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000295s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000276s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000318s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000293s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:47:23+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.042791s] [吞吐率：23.37req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000519s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000803s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000427s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000234s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000200s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:47:30+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.039467s] [吞吐率：25.34req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000368s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000280s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000211s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000214s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:47:56+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.046319s] [吞吐率：21.59req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 0,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000421s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000286s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000242s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000220s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:48:00+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.044990s] [吞吐率：22.23req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000509s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000821s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000434s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000306s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000233s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:48:23+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.042174s] [吞吐率：23.71req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000396s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000596s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000345s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000373s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:48:56+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.047915s] [吞吐率：20.87req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000458s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000662s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000370s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000344s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000306s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:49:00+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.039026s] [吞吐率：25.62req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000322s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000336s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000210s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000218s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:56:17+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.059774s] [吞吐率：16.73req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 0,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000307s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000287s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000247s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000225s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:56:20+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.045182s] [吞吐率：22.13req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000477s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000364s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000323s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000297s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:56:22+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.040045s] [吞吐率：24.97req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000375s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000300s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000272s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000230s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:56:23+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.043632s] [吞吐率：22.92req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000502s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000300s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000328s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000213s ]
+---------------------------------------------------------------
+[ 2018-11-26T17:56:24+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.046136s] [吞吐率：21.67req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000404s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000389s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000371s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000301s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:00:05+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.045504s] [吞吐率：21.98req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000311s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000314s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000253s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000256s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:01:21+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.040153s] [吞吐率：24.90req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000300s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000281s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000251s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000177s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:01:22+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.058641s] [吞吐率：17.05req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000336s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000334s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000341s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000245s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:01:38+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.050505s] [吞吐率：19.80req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 0,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000572s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000355s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000380s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000272s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:01:42+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.053619s] [吞吐率：18.65req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000487s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000870s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000392s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000425s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000189s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:01:52+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.042610s] [吞吐率：23.47req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000565s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000355s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000236s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000202s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:01:54+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.045512s] [吞吐率：21.97req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000310s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000292s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000233s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000212s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:01:55+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.040388s] [吞吐率：24.76req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000367s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000283s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000271s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000258s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:01:57+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.051550s] [吞吐率：19.40req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000420s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000374s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000430s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000340s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:01:58+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.039284s] [吞吐率：25.46req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000335s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000279s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000288s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000226s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:01:59+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.046778s] [吞吐率：21.38req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000427s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000448s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000360s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000352s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:02:03+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.042430s] [吞吐率：23.57req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000427s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000674s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000287s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000284s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000271s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:02:05+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.040704s] [吞吐率：24.57req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000636s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000886s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000437s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000375s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000340s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:02:07+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.048244s] [吞吐率：20.73req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000426s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000375s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000452s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000369s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:02:09+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.044080s] [吞吐率：22.69req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000309s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000285s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000203s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000200s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:02:10+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.040327s] [吞吐率：24.80req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000330s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000276s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000201s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000201s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:02:12+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.045315s] [吞吐率：22.07req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000381s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000292s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000224s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000212s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:02:13+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.041600s] [吞吐率：24.04req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000317s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000295s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000224s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000192s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:02:27+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.050096s] [吞吐率：19.96req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 0,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000416s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000362s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000343s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000288s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:02:31+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.046148s] [吞吐率：21.67req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000488s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000786s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000482s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000284s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000211s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:02:32+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.039769s] [吞吐率：25.15req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000301s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000304s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000264s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000253s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:02:33+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.055404s] [吞吐率：18.05req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000600s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000792s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000375s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000336s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000245s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:02:34+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.039698s] [吞吐率：25.19req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000470s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000295s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000229s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000228s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:02:35+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.044777s] [吞吐率：22.33req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000361s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000290s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000277s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000369s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:06:16+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.044538s] [吞吐率：22.45req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000328s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000281s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000218s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000201s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:06:19+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.041552s] [吞吐率：24.07req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 6,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000394s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000699s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,6 [ RunTime:0.000336s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000245s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000253s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:06:20+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.041557s] [吞吐率：24.06req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000361s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000286s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000223s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000188s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:06:35+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.049450s] [吞吐率：20.22req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000331s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000290s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000239s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000217s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:06:36+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.040966s] [吞吐率：24.41req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000304s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000347s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000321s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000270s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:06:40+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.045450s] [吞吐率：22.00req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000309s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000327s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000198s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000200s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:06:47+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.042291s] [吞吐率：23.65req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000564s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000417s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000297s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000219s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:07:13+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.055771s] [吞吐率：17.93req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000330s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000298s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000272s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000271s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:08:57+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.044892s] [吞吐率：22.28req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 0,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000363s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000304s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000275s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000288s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:08:58+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.052404s] [吞吐率：19.08req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000574s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000909s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000520s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000399s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000328s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:09:23+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.046676s] [吞吐率：21.42req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 0,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000418s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000362s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000326s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000289s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:09:31+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.047007s] [吞吐率：21.27req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000522s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000773s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000351s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000291s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000321s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:09:35+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/edit
+[运行时间：0.042213s] [吞吐率：23.69req/s] [内存消耗：2,825.70kb] [文件加载：71]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '233',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'id' => 1,
+  'name' => '灰色调',
+  'password' => '202cb962ac59075b964b07152d234b70',
+  'email' => 'yjra@qq.com',
+  'signature' => '将有请于人，必先有入焉。',
+  'sex' => '男',
+  'city' => '浙江,,',
+  'model11' => '四川',
+  'model12' => '成都',
+  'model13' => '武侯',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000323s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000537s ]
+[ sql ] [ SQL ] UPDATE `zp_user`  SET `name` = '灰色调' , `password` = 'd9b1d7db4cd6e70935368a1efb10e377' , `email` = 'yjra@qq.com' , `signature` = '将有请于人，必先有入焉。' , `sex` = '男' , `city` = '浙江,,'  WHERE  `id` = 1 [ RunTime:0.003781s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:09:39+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.045482s] [吞吐率：21.99req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000324s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000277s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000300s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000303s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:10:21+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.048290s] [吞吐率：20.71req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000473s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000286s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000227s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000179s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:10:26+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/edit
+[运行时间：0.070971s] [吞吐率：14.09req/s] [内存消耗：2,825.70kb] [文件加载：71]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '233',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'id' => 1,
+  'name' => '灰色调',
+  'password' => 'd9b1d7db4cd6e70935368a1efb10e377',
+  'email' => 'yjra@qq.com',
+  'signature' => '将有请于人，必先有入焉。',
+  'sex' => '男',
+  'city' => '浙江,,',
+  'model11' => '四川',
+  'model12' => '成都',
+  'model13' => '武侯',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000343s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000574s ]
+[ sql ] [ SQL ] UPDATE `zp_user`  SET `name` = '灰色调' , `password` = '7363a0d0604902af7b70b271a0b96480' , `email` = 'yjra@qq.com' , `signature` = '将有请于人，必先有入焉。' , `sex` = '男' , `city` = '浙江,,'  WHERE  `id` = 1 [ RunTime:0.000641s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:10:27+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.052943s] [吞吐率：18.89req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000656s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000946s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000390s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000420s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000312s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:10:31+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.041717s] [吞吐率：23.97req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 0,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000311s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000284s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000225s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000204s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:10:33+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.048942s] [吞吐率：20.43req/s] [内存消耗：2,915.78kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000611s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000822s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000366s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000298s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000274s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:10:38+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/edit
+[运行时间：0.043072s] [吞吐率：23.22req/s] [内存消耗：2,825.96kb] [文件加载：71]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '245',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'id' => 1,
+  'name' => '灰色调',
+  'password' => '7363a0d0604902af7b70b271a0b96480',
+  'email' => 'yjra@qq.com',
+  'signature' => '将有请于人，必先有入焉。',
+  'sex' => '男',
+  'city' => '四川,成都,武侯',
+  'model11' => '四川',
+  'model12' => '成都',
+  'model13' => '武侯',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000314s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000551s ]
+[ sql ] [ SQL ] UPDATE `zp_user`  SET `name` = '灰色调' , `password` = '1cc39ffd758234422e1f75beadfc5fb2' , `email` = 'yjra@qq.com' , `signature` = '将有请于人，必先有入焉。' , `sex` = '男' , `city` = '四川,成都,武侯'  WHERE  `id` = 1 [ RunTime:0.002198s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:10:40+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.043382s] [吞吐率：23.05req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000506s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000288s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000236s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000214s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:11:48+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.048605s] [吞吐率：20.57req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000313s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000562s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000303s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000280s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000254s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:11:52+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.039705s] [吞吐率：25.19req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000437s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000662s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000307s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000247s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000229s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:13:33+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.046965s] [吞吐率：21.29req/s] [内存消耗：2,915.82kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000424s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000325s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000302s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000276s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:14:28+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/edit
+[运行时间：0.041729s] [吞吐率：23.96req/s] [内存消耗：2,826.13kb] [文件加载：71]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '255',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'id' => 71,
+  'name' => '小黄',
+  'password' => '123456',
+  'email' => 'blog@qq.com',
+  'signature' => '欲人之爱己也，必先爱人。欲人之从己也，必先从人。
+',
+  'sex' => '男',
+  'city' => '四川,成都,武侯',
+  'model11' => '四川',
+  'model12' => '成都',
+  'model13' => '武侯',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000323s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000533s ]
+[ sql ] [ SQL ] UPDATE `zp_user`  SET `name` = '小黄' , `password` = 'e10adc3949ba59abbe56e057f20f883e' , `email` = 'blog@qq.com' , `signature` = '欲人之爱己也，必先爱人。欲人之从己也，必先从人。
+' , `sex` = '男' , `city` = '四川,成都,武侯'  WHERE  `id` = 71 [ RunTime:0.002217s ]
+---------------------------------------------------------------
+[ 2018-11-26T18:14:32+08:00 ] 127.0.0.1 POST localhost/blog/public/apia/user/index
+[运行时间：0.045613s] [吞吐率：21.92req/s] [内存消耗：2,915.92kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'currpage' => 1,
+  'listrows' => 3,
+  'total' => 2,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000427s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,3 [ RunTime:0.000362s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000274s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000265s ]

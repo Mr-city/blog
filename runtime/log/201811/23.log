@@ -1,0 +1,532 @@
+---------------------------------------------------------------
+[ 2018-11-23T10:22:47+08:00 ] ::1 GET localhost/blog/public/
+[运行时间：0.053470s] [吞吐率：18.70req/s] [内存消耗：2,072.00kb] [文件加载：67]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/blog/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/application/index/view/index/index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-11-23T10:24:39+08:00 ] ::1 GET localhost/blog/public/
+[运行时间：0.032524s] [吞吐率：30.75req/s] [内存消耗：2,072.01kb] [文件加载：67]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/blog/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/application/index/view/index/index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-11-23T10:25:37+08:00 ] ::1 GET localhost/blog/public/admin/index
+[运行时间：0.030952s] [吞吐率：32.31req/s] [内存消耗：1,856.68kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-11-23T10:25:51+08:00 ] ::1 GET localhost/blog/public/admin/index
+[运行时间：0.037134s] [吞吐率：26.93req/s] [内存消耗：2,151.65kb] [文件加载：71]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/application/admin/view/index/index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-11-23T10:25:51+08:00 ] ::1 GET localhost/blog/public/admin/console/index.html
+[运行时间：0.045254s] [吞吐率：22.10req/s] [内存消耗：2,031.20kb] [文件加载：69]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/blog/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/application/admin/view/console/index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-11-23T10:25:55+08:00 ] ::1 GET localhost/blog/public/admin/article/index.html
+[运行时间：0.106700s] [吞吐率：9.37req/s] [内存消耗：3,606.84kb] [文件加载：91]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/blog/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/application/admin/view/article/index.html [ array (
+  0 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003697s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_article` [ RunTime:0.007446s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_article` LIMIT 1 [ RunTime:0.001231s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_article` LIMIT 0,5 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_column` [ RunTime:0.001786s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_column` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001229s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_column` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_column` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000315s ]
+---------------------------------------------------------------
+[ 2018-11-23T10:26:03+08:00 ] ::1 GET localhost/blog/public/admin/user/index.html
+[运行时间：0.096539s] [吞吐率：10.36req/s] [内存消耗：3,165.30kb] [文件加载：79]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/blog/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/application/admin/view/user/index.html [ array (
+  0 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000472s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.003284s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,10 [ RunTime:0.000273s ]
+---------------------------------------------------------------
+[ 2018-11-23T10:26:06+08:00 ] ::1 GET localhost/blog/public/admin/user/edit/id/1.html
+[运行时间：0.046792s] [吞吐率：21.37req/s] [内存消耗：3,067.74kb] [文件加载：76]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/blog/public/admin/user/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/application/admin/view/user/edit.html [ array (
+  0 => 'user',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000431s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000436s ]
+---------------------------------------------------------------
+[ 2018-11-23T10:26:10+08:00 ] ::1 GET localhost/blog/public/admin/user/index.html
+[运行时间：0.049568s] [吞吐率：20.17req/s] [内存消耗：3,165.30kb] [文件加载：79]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/blog/public/admin/user/edit/id/1.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/application/admin/view/user/index.html [ array (
+  0 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000315s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.000609s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,10 [ RunTime:0.000325s ]
+---------------------------------------------------------------
+[ 2018-11-23T10:26:15+08:00 ] ::1 GET localhost/blog/public/admin/article/add/id/1.html
+[运行时间：0.054715s] [吞吐率：18.28req/s] [内存消耗：3,063.82kb] [文件加载：76]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/blog/public/admin/article/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/application/admin/view/article/add.html [ array (
+  0 => 'columns',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000515s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_column` [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_column` [ RunTime:0.000277s ]
+---------------------------------------------------------------
+[ 2018-11-23T10:26:26+08:00 ] ::1 GET localhost/blog/public/admin/column/index.html
+[运行时间：0.052814s] [吞吐率：18.93req/s] [内存消耗：3,150.73kb] [文件加载：79]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/blog/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/application/admin/view/column/index.html [ array (
+  0 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000555s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_column` [ RunTime:0.000687s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_column` LIMIT 1 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_column` LIMIT 0,10 [ RunTime:0.000216s ]
+---------------------------------------------------------------
+[ 2018-11-23T10:26:29+08:00 ] ::1 GET localhost/blog/public/admin/column/edit/id/2.html
+[运行时间：0.048612s] [吞吐率：20.57req/s] [内存消耗：3,042.98kb] [文件加载：76]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/blog/public/admin/column/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/application/admin/view/column/edit.html [ array (
+  0 => 'column',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000310s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_column` [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_column` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000317s ]
+---------------------------------------------------------------
+[ 2018-11-23T10:26:30+08:00 ] ::1 GET localhost/blog/public/admin/column/index.html
+[运行时间：0.048615s] [吞吐率：20.57req/s] [内存消耗：3,150.74kb] [文件加载：79]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/blog/public/admin/column/edit/id/2.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/application/admin/view/column/index.html [ array (
+  0 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000352s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_column` [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_column` LIMIT 1 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_column` LIMIT 0,10 [ RunTime:0.000199s ]
+---------------------------------------------------------------
+[ 2018-11-23T10:29:08+08:00 ] ::1 GET localhost/blog/public/admin/index
+[运行时间：0.033537s] [吞吐率：29.82req/s] [内存消耗：2,151.65kb] [文件加载：71]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/application/admin/view/index/index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-11-23T10:29:08+08:00 ] ::1 GET localhost/blog/public/admin/console/index.html
+[运行时间：0.035784s] [吞吐率：27.95req/s] [内存消耗：2,031.20kb] [文件加载：69]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/blog/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/application/admin/view/console/index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-11-23T22:48:05+08:00 ] ::1 GET localhost/blog/public/
+[运行时间：0.052476s] [吞吐率：19.06req/s] [内存消耗：2,072.01kb] [文件加载：67]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/blog/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/application/index/view/index/index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-11-23T22:48:12+08:00 ] ::1 GET localhost/blog/public/admin/index
+[运行时间：0.041412s] [吞吐率：24.15req/s] [内存消耗：2,151.01kb] [文件加载：71]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/application/admin/view/index/index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-11-23T22:48:12+08:00 ] ::1 GET localhost/blog/public/admin/console/index.html
+[运行时间：0.043617s] [吞吐率：22.93req/s] [内存消耗：2,031.20kb] [文件加载：69]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/blog/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/application/admin/view/console/index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-11-23T22:48:14+08:00 ] ::1 GET localhost/blog/public/admin/column/index.html
+[运行时间：0.106885s] [吞吐率：9.36req/s] [内存消耗：3,150.73kb] [文件加载：79]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/blog/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/application/admin/view/column/index.html [ array (
+  0 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000488s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_column` [ RunTime:0.008010s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_column` LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_column` LIMIT 0,10 [ RunTime:0.000248s ]
+---------------------------------------------------------------
+[ 2018-11-23T22:48:21+08:00 ] ::1 GET localhost/blog/public/admin/article/index.html
+[运行时间：0.115013s] [吞吐率：8.69req/s] [内存消耗：3,606.84kb] [文件加载：91]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/blog/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/application/admin/view/article/index.html [ array (
+  0 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000486s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_article` [ RunTime:0.001936s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_article` LIMIT 1 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_article` LIMIT 0,5 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_column` [ RunTime:0.000623s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_column` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_column` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_column` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000215s ]
+---------------------------------------------------------------
+[ 2018-11-23T22:48:25+08:00 ] ::1 GET localhost/blog/public/admin/user/index.html
+[运行时间：0.075311s] [吞吐率：13.28req/s] [内存消耗：3,165.30kb] [文件加载：79]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/blog/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/application/admin/view/user/index.html [ array (
+  0 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000339s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.001596s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user` LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` LIMIT 0,10 [ RunTime:0.000295s ]
+---------------------------------------------------------------
+[ 2018-11-23T22:48:29+08:00 ] ::1 GET localhost/blog/public/admin/form/index.html
+[运行时间：0.034145s] [吞吐率：29.29req/s] [内存消耗：2,031.16kb] [文件加载：69]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/blog/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/application/admin/view/form/index.html [ array (
+) ]

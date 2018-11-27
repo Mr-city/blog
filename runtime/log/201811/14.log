@@ -1,0 +1,204 @@
+---------------------------------------------------------------
+[ 2018-11-14T11:10:44+08:00 ] ::1 GET localhost/blog/public/
+[运行时间：0.056915s] [吞吐率：17.57req/s] [内存消耗：1,943.38kb] [文件加载：67]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.99',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/blog/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542089407; nb-referrer-hostname=localhost; PHPSESSID=4141829312bdc4627010ae99e1ff38ec; VOTE_MEMBER_IP=%3A%3A1; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542089492; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F; DedeUserID=1; DedeUserID__ckMd5=596f5c35a56fc748; DedeLoginTime=1542089525; DedeLoginTime__ckMd5=a41226728f442da0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/application/index/view/index/index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-11-14T11:10:49+08:00 ] ::1 GET localhost/blog/public/admin
+[运行时间：0.042888s] [吞吐率：23.32req/s] [内存消耗：1,944.70kb] [文件加载：72]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.99',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542089407; nb-referrer-hostname=localhost; PHPSESSID=4141829312bdc4627010ae99e1ff38ec; VOTE_MEMBER_IP=%3A%3A1; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542089492; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F; DedeUserID=1; DedeUserID__ckMd5=596f5c35a56fc748; DedeLoginTime=1542089525; DedeLoginTime__ckMd5=a41226728f442da0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+---------------------------------------------------------------
+[ 2018-11-14T11:10:52+08:00 ] ::1 GET localhost/blog/public/admin/login/index.html
+[运行时间：0.033518s] [吞吐率：29.83req/s] [内存消耗：1,936.34kb] [文件加载：69]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.99',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/blog/public/admin',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542089407; nb-referrer-hostname=localhost; PHPSESSID=4141829312bdc4627010ae99e1ff38ec; VOTE_MEMBER_IP=%3A%3A1; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542089492; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F; DedeUserID=1; DedeUserID__ckMd5=596f5c35a56fc748; DedeLoginTime=1542089525; DedeLoginTime__ckMd5=a41226728f442da0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/application/admin/view/login/index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-11-14T11:10:52+08:00 ] ::1 GET localhost/blog/public/captcha.html
+[运行时间：0.125700s] [吞吐率：7.96req/s] [内存消耗：1,326.95kb] [文件加载：54]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.99',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/blog/public/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542089407; nb-referrer-hostname=localhost; PHPSESSID=4141829312bdc4627010ae99e1ff38ec; VOTE_MEMBER_IP=%3A%3A1; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542089492; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F; DedeUserID=1; DedeUserID__ckMd5=596f5c35a56fc748; DedeLoginTime=1542089525; DedeLoginTime__ckMd5=a41226728f442da0',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-11-14T11:10:58+08:00 ] ::1 POST localhost/blog/public/admin/login/index.html
+[运行时间：0.114763s] [吞吐率：8.71req/s] [内存消耗：3,219.77kb] [文件加载：84]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '55',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.99',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/blog/public/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542089407; nb-referrer-hostname=localhost; PHPSESSID=4141829312bdc4627010ae99e1ff38ec; VOTE_MEMBER_IP=%3A%3A1; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542089492; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F; DedeUserID=1; DedeUserID__ckMd5=596f5c35a56fc748; DedeLoginTime=1542089525; DedeLoginTime__ckMd5=a41226728f442da0',
+)
+[ info ] [ PARAM ] array (
+  'name' => '灰色调',
+  'password' => '123',
+  'code' => 'aafm',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003378s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user` [ RunTime:0.007368s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user` WHERE  `name` = '灰色调' LIMIT 1 [ RunTime:0.000840s ]
+---------------------------------------------------------------
+[ 2018-11-14T11:11:02+08:00 ] ::1 GET localhost/blog/public/admin/index/index.html
+[运行时间：0.031896s] [吞吐率：31.35req/s] [内存消耗：1,959.35kb] [文件加载：71]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.99',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/blog/public/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542089407; nb-referrer-hostname=localhost; PHPSESSID=4141829312bdc4627010ae99e1ff38ec; VOTE_MEMBER_IP=%3A%3A1; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542089492; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F; DedeUserID=1; DedeUserID__ckMd5=596f5c35a56fc748; DedeLoginTime=1542089525; DedeLoginTime__ckMd5=a41226728f442da0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/application/admin/view/index/index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-11-14T11:11:02+08:00 ] ::1 GET localhost/blog/public/admin/console/index.html
+[运行时间：0.040903s] [吞吐率：24.45req/s] [内存消耗：1,902.62kb] [文件加载：69]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.99',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/blog/public/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542089407; nb-referrer-hostname=localhost; PHPSESSID=4141829312bdc4627010ae99e1ff38ec; VOTE_MEMBER_IP=%3A%3A1; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542089492; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F; DedeUserID=1; DedeUserID__ckMd5=596f5c35a56fc748; DedeLoginTime=1542089525; DedeLoginTime__ckMd5=a41226728f442da0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/application/admin/view/console/index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-11-14T11:11:04+08:00 ] ::1 GET localhost/blog/public/admin/article/index.html
+[运行时间：0.116857s] [吞吐率：8.56req/s] [内存消耗：3,461.57kb] [文件加载：91]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.99',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/blog/public/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542089407; nb-referrer-hostname=localhost; PHPSESSID=4141829312bdc4627010ae99e1ff38ec; VOTE_MEMBER_IP=%3A%3A1; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542089492; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F; DedeUserID=1; DedeUserID__ckMd5=596f5c35a56fc748; DedeLoginTime=1542089525; DedeLoginTime__ckMd5=a41226728f442da0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/application/admin/view/article/index.html [ array (
+  0 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000435s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_article` [ RunTime:0.001946s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_article` LIMIT 1 [ RunTime:0.001300s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_article` LIMIT 0,5 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_column` [ RunTime:0.001843s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_column` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_column` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_column` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000220s ]

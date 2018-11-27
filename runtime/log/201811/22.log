@@ -1,0 +1,46 @@
+---------------------------------------------------------------
+[ 2018-11-22T11:51:04+08:00 ] ::1 GET localhost/blog/public/
+[运行时间：0.047258s] [吞吐率：21.16req/s] [内存消耗：2,072.38kb] [文件加载：67]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/blog/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F; DedeUserID=1; lastCid=1; lastCid__ckMd5=60edb5ce099f3ab3; DedeUserID__ckMd5=83ff7cc6c95a1a02; DedeLoginTime=1542781849; DedeLoginTime__ckMd5=8697327afe2ded01',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/application/index/view/index/index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-11-22T11:55:18+08:00 ] ::1 GET localhost/blog/public/portfolio.html
+[运行时间：0.032662s] [吞吐率：30.62req/s] [内存消耗：1,442.30kb] [文件加载：54]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-22T11:57:11+08:00 ] ::1 GET localhost/blog/public/
+[运行时间：0.042857s] [吞吐率：23.33req/s] [内存消耗：2,072.38kb] [文件加载：67]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.104',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/blog/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=b422dc2ad64b08b6d36e2830a0cc405a; Hm_lvt_7e7daffb3956e388262fc8df53cfb498=1542458526; Hm_lpvt_7e7daffb3956e388262fc8df53cfb498=1542458526; nb-referrer-hostname=localhost; nb-start-page-url=http%3A%2F%2Flocalhost%2Fscgkpx%2F; DedeUserID=1; lastCid=1; lastCid__ckMd5=60edb5ce099f3ab3; DedeUserID__ckMd5=83ff7cc6c95a1a02; DedeLoginTime=1542781849; DedeLoginTime__ckMd5=8697327afe2ded01',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/blog/application/index/view/index/index.html [ array (
+) ]
