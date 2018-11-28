@@ -13,3 +13,9 @@ export const COLUMNINDEX = '/api/blog/public/apia/column/index'
 export const COLUMNADD = '/api/blog/public/apia/column/add' 
 export const COLUMNEDIT = '/api/blog/public/apia/column/edit' 
 export const COLUMNDEL = '/api/blog/public/apia/column/del' 
+
+//文章列表及操作
+export const ARTICLEINDEX = '/api/blog/public/apia/article/index' 
+export const ARTICLEADD = '/api/blog/public/apia/article/add' 
+export const ARTICLEEDIT = '/api/blog/public/apia/article/edit' 
+export const ARTICLEDEL = '/api/blog/public/apia/article/del' 

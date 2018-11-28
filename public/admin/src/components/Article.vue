@@ -3,15 +3,10 @@
 	<Button type="primary" icon="md-add" @click="handleAdd">新增</Button>
 	<Table stripe :columns="columns1" :data="data1"></Table>
 	<Page :total="pageLIst.total" :page-size-opts="pageSizeOpts" :page-size="pageLIst.listrows" show-sizer @on-change="changepage" @on-page-size-change="changePageSize" />
-	<AddUser :value="value" :title="title" @onResultChange="onResultChange" :dataShow="dataShow"></AddUser>
-	<Modal
-        v-model="modal"
-        title="提示？"
-        @on-ok="ok"
-		style="width:280px;"
-		>
-        <p>确定删除吗？</p>
-    </Modal>
+	<AddArticle :value="value" :title="title" @onResultChange="onResultChange" :dataShow="dataShow"></AddArticle>
+	<Modal v-model="modal" title="提示？" @on-ok="ok" style="width:280px;">
+		<p>确定删除吗？</p>
+	</Modal>
 	<transition :name="transitionName">
 		<router-view class="child-view"></router-view>
 	</transition>
@@ -19,19 +14,25 @@
 </template>
 <script>
 import * as utils from '@/utils/utils'
-import AddUser from '@/components/add/AddUser'
-import {USERINDEX,USEREDIT,USERADD,USERDEL} from '@/utils/api'
-import {mapState,mapMutations} from 'vuex'
+import AddArticle from '@/components/add/AddArticle'
+import {
+	ARTICLEINDEX,
+	ARTICLEDEL
+} from '@/utils/api'
+import {
+	mapState,
+	mapMutations
+} from 'vuex'
 export default {
-	components:{
-		AddUser	
+	components: {
+		AddArticle,
 	},
 	data() {
 		return {
-			modal:false,
-			value:false,
-			flag:false,
-			title:'',
+			modal: false,
+			value: false,
+			flag: false,
+			title: '',
 			transitionName: 'slide-left',
 			columns1: [{
 					title: '#',
@@ -39,33 +40,38 @@ export default {
 					width: 50,
 				},
 				{
-					title: '账户',
-					key: 'name',
-					width: 120,
+					title: '缩略图',
+					key: 'pic',
 					align: 'center',
-				},
-				{
-					title: '邮箱',
-					key: 'email',
-					width: 150,
-					align: 'center',
-				},
-				{
-					title: '性别',
-					key: 'sex',
-					width: 60,
-					align: 'center',
-				},
-				{
-					title: '城市',
-					key: 'city',
-					width: 180,
-					align: 'center',
-				},
-				{
-					title: '个性签名',
-					key: 'signature',
+					render: (h, params) => {
+						return h('img', {
+							attrs: {
+								src: "http://localhost/blog/public/static/uploads/"+params.row.pic,
+								style: 'width: 100px;border-radius: 2px;margin-top:5px;'
+							},
+						})
 
+					}
+				},
+				{
+					title: '文章标题',
+					key: 'title',
+					align: 'center',
+				},
+				{
+					title: '作者',
+					key: 'author',
+					align: 'center',
+				},
+				{
+					title: '是否推荐',
+					key: 'state',
+					align: 'center',
+				},
+				{
+					title: '所属栏目',
+					key: 'columnid',
+					align: 'center',
 				},
 				{
 					title: '操作',
@@ -104,16 +110,18 @@ export default {
 				}
 			],
 			data1: [],
-			dataShow:{},
-			formData: {},
-			delIndex:0,
+			dataShow: {},
+			formData: {
+				name: '',
+			},
+			delIndex: 0,
 			pageLIst: {
 				currpage: 1,
 				listrows: 3,
 				total: 0
 			},
 			pageSizeOpts: [3, 6, 9, 12],
-			delwatch:0
+			delwatch: 0
 		}
 	},
 	watch: {
@@ -124,72 +132,72 @@ export default {
 				this.transitionName = 'slide-left';
 			}
 		},
-		value(){//当关闭右侧弹出更新界面
+		value() { //当关闭右侧弹出更新界面
 			this.handleList()
 		},
-		delwatch(){//删除一条数据更新界面
+		delwatch() { //删除一条数据更新界面
 			this.handleList()
-		}
+		},
 	},
 	created() {
 		this.handleList()
 	},
-	computed:{
-		...mapState(['userPage'])	
+	computed: {
+		...mapState(['userPage'])
 	},
 	methods: {
 		...mapMutations(['userChangeData']),
-		show(index) {
+		show(index) { //编辑
 			this.dataShow = this.data1[index];
-			let city = this.dataShow.city.split(',')
-			this.dataShow.model11 = city[0]
-			this.dataShow.model12 = city[1]
-			this.dataShow.model13 = city[2]
 			this.userChangeData(this.dataShow)
 
 			this.value = true;
 			this.title = 'edit';
 		},
-		ok(){
+		ok() {
 			this.delwatch = this.data1[this.delIndex].id
-			utils.forAjaxPost(USERDEL, {id:this.data1[this.delIndex].id}, (res) => {
-				if(res.data.status == 1){
+			utils.forAjaxPost(ARTICLEDEL, {
+				id: this.data1[this.delIndex].id
+			}, (res) => {
+				if (res.data.status == 1) {
 					this.$Message.success(res.data.msg)
 					this.data1.splice(this.delIndex, 1);
-				}else{
+				} else {
 					this.$Message.error(res.data.msg)
 				}
 			})
-			
+
 		},
-		remove(index) {//删除一条数据
+		remove(index) { //删除一条数据
 			console.log(index);
 			this.modal = true;
 			this.delIndex = index;
 		},
-		onResultChange(val){//添加用户，子组件状态改变，
+		onResultChange(val) { //添加用户，子组件状态改变，
 			this.value = val;
 		},
-		handleAdd() {//显示添加用户页面
+		handleAdd() { //显示添加页面
 			this.value = true;
 			this.dataShow = this.formData;
 			this.title = 'add';
 		},
-		handleList() {//更新列表
-			utils.forAjaxPost(USERINDEX, this.pageLIst, (res) => {
+		handleList() { //更新列表
+			utils.forAjaxPost(ARTICLEINDEX, this.pageLIst, (res) => {
 				this.data1 = res.data.data;
 				this.pageLIst.total = res.data.total;
+				console.log(this.data1);
 			})
 		},
-		changepage(cur) {//切换分页
+		changepage(cur) { //切换分页
 			this.pageLIst.currpage = cur
-			utils.forAjaxPost(USERINDEX, this.pageLIst, (res) => {
+			console.log(cur);
+			utils.forAjaxPost(ARTICLEINDEX, this.pageLIst, (res) => {
 				this.data1 = res.data.data;
 			})
 		},
-		changePageSize(size) {//每页显示多少条
+		changePageSize(size) { //每页显示多少条
 			this.pageLIst.listrows = size;
-			utils.forAjaxPost(USERINDEX, this.pageLIst, (res) => {
+			utils.forAjaxPost(ARTICLEINDEX, this.pageLIst, (res) => {
 				this.data1 = res.data.data;
 			})
 		}

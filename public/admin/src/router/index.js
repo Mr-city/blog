@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import User from '@/components/User'
 import Column from '@/components/Column'
-import Content from '@/components/Content'
+import Article from '@/components/Article'
 import Test from '@/components/testStore'
 import Error from '@/components/base/404'
 import Login from '@/components/Login'
@@ -42,9 +42,9 @@ export default new Router({
       component: Test
     },
     {
-      path: '/content',
-      name: 'content',
-      component: Content
+      path: '/article',
+      name: 'article',
+      component: Article
     },
     {
         path:'/404',

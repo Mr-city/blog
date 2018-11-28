@@ -5,7 +5,6 @@
 			<FormItem label="栏目名称" prop="name">
 				<Input v-model="formData.name" style="width: 240px;"></Input>
 			</FormItem>
-			<VueUeditorWrap></VueUeditorWrap>
 		</Form>
 		<div class="demo-drawer-footer">
             <Button type="primary" @click="handleAdd" @keyup.enter.native="handleAdd" v-if="title == 'add'">增加</Button>
@@ -20,10 +19,8 @@
 import * as utils from '@/utils/utils'
 import {COLUMNADD,COLUMNEDIT} from '@/utils/api'
 import {mapState} from 'vuex' 
-import VueUeditorWrap from 'vue-ueditor-wrap'
 export default {
 	components:{
-		VueUeditorWrap
 	},
 	props:{
         value:{
@@ -36,20 +33,6 @@ export default {
     },
 	data: () => ({
 		value3: false,
-		myConfig: {
-            // 如果需要上传功能,找后端小伙伴要服务器接口地址
-            // serverUrl: 'http://api.demo.com/ueditor/upload',
-            // 你的UEditor资源存放的路径,相对于打包后的index.html(路由使用history模式注意使用绝对路径或者填写正确的相对路径)
-            UEDITOR_HOME_URL: './static/UEditor/',
-            // 编辑器不自动被内容撑高
-            autoHeightEnabled: false,
-            // 初始容器高度
-            initialFrameHeight: 240,
-            // 初始容器宽度
-            initialFrameWidth: '100%',
-            // 关闭自动保存
-            enableAutoSave: false
-        },
 		styles: {
 			height: 'calc(100% - 55px)',
 			overflow: 'auto',

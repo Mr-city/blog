@@ -25,7 +25,7 @@ import {
 } from 'vuex'
 export default {
 	components: {
-		AddColumn
+		AddColumn,
 	},
 	data() {
 		return {

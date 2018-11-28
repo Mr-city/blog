@@ -1,7 +1,7 @@
 <?php
-namespace app\admin\controller;
+namespace app\apia\controller;
 
-use app\admin\controller\Common;
+use app\apia\controller\Common;
 use app\admin\model\Article as ArticleModel;
 use think\Request;
 
@@ -13,11 +13,28 @@ class Article extends Common
      */
     public function index()
     {
-        // $list = db('article')->paginate(10);
-        $list = ArticleModel::paginate(5);
-        // 把分页数据赋值给模板变量list
-        $this->assign('list', $list);
-        return $this->fetch();
+        // $list = ArticleModel::paginate(10);
+        // $list = db('article')->alias("a")->join('column c','c.id = a.columnid')->field('a.id,a.pic,a.title,a.author,a.state')->paginate(10);
+        // dump($list['column']);exit;
+        // // 把分页数据赋值给模板变量list
+        // $this->assign('list', $list);
+        // return $this->fetch();
+        
+        $reData = [
+            "total" => "0",
+            "data" => []
+        ];
+        
+        if (request()->isPost()) {
+            // return 'post';
+            $currentPage = input('currpage');
+            $listRows = input('listrows');
+            $reData['data'] = ArticleModel::page($currentPage,$listRows)->select();
+            $reData['total'] = db('article')->count();
+            return json_encode($reData);
+        }else{
+            return 'get';
+        }
     }
     /**
      * 增加一条数据

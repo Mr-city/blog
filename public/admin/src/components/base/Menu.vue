@@ -12,7 +12,7 @@
             <Icon type="md-list-box" />
             <span>栏目管理</span>
         </MenuItem>
-        <MenuItem name="content">
+        <MenuItem name="article">
             <Icon type="md-document" />
             <span>文章管理</span>
         </MenuItem>
