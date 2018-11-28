@@ -34,6 +34,7 @@ export default {
 			flag: false,
 			title: '',
 			transitionName: 'slide-left',
+			imgUrl:'http://localhost/blog/public/static/uploads/',
 			columns1: [{
 					title: '#',
 					key: 'id',
@@ -46,9 +47,14 @@ export default {
 					render: (h, params) => {
 						return h('img', {
 							attrs: {
-								src: "http://localhost/blog/public/static/uploads/"+params.row.pic,
+								src: this.imgUrl+params.row.pic,
 								style: 'width: 100px;border-radius: 2px;margin-top:5px;'
 							},
+							on: {
+								click: () => {
+									this.imgShow(params.index,this.imgUrl+params.row.pic)
+								}
+							}
 						})
 
 					}
@@ -67,10 +73,13 @@ export default {
 					title: '是否推荐',
 					key: 'state',
 					align: 'center',
+					render: (h, params) => {
+						return h('span', params.row.state ? "已推荐" : "未推荐")
+					}
 				},
 				{
 					title: '所属栏目',
-					key: 'columnid',
+					key: 'columnname',
 					align: 'center',
 				},
 				{
@@ -111,9 +120,7 @@ export default {
 			],
 			data1: [],
 			dataShow: {},
-			formData: {
-				name: '',
-			},
+			formData: {},
 			delIndex: 0,
 			pageLIst: {
 				currpage: 1,
@@ -149,8 +156,8 @@ export default {
 		...mapMutations(['userChangeData']),
 		show(index) { //编辑
 			this.dataShow = this.data1[index];
+			console.log(this.dataShow);
 			this.userChangeData(this.dataShow)
-
 			this.value = true;
 			this.title = 'edit';
 		},
@@ -169,7 +176,6 @@ export default {
 
 		},
 		remove(index) { //删除一条数据
-			console.log(index);
 			this.modal = true;
 			this.delIndex = index;
 		},
@@ -179,18 +185,17 @@ export default {
 		handleAdd() { //显示添加页面
 			this.value = true;
 			this.dataShow = this.formData;
+			this.dataShow.state = 0;
 			this.title = 'add';
 		},
 		handleList() { //更新列表
 			utils.forAjaxPost(ARTICLEINDEX, this.pageLIst, (res) => {
 				this.data1 = res.data.data;
 				this.pageLIst.total = res.data.total;
-				console.log(this.data1);
 			})
 		},
 		changepage(cur) { //切换分页
 			this.pageLIst.currpage = cur
-			console.log(cur);
 			utils.forAjaxPost(ARTICLEINDEX, this.pageLIst, (res) => {
 				this.data1 = res.data.data;
 			})

@@ -13,13 +13,9 @@ class Article extends Common
      */
     public function index()
     {
-        // $list = ArticleModel::paginate(10);
-        // $list = db('article')->alias("a")->join('column c','c.id = a.columnid')->field('a.id,a.pic,a.title,a.author,a.state')->paginate(10);
-        // dump($list['column']);exit;
-        // // 把分页数据赋值给模板变量list
-        // $this->assign('list', $list);
-        // return $this->fetch();
         
+        // $reData = db('article')->alias("a")->join('column c','c.cid = a.columnid')->page(1,5)->select();
+        // dump($reData);exit;
         $reData = [
             "total" => "0",
             "data" => []
@@ -29,7 +25,7 @@ class Article extends Common
             // return 'post';
             $currentPage = input('currpage');
             $listRows = input('listrows');
-            $reData['data'] = ArticleModel::page($currentPage,$listRows)->select();
+            $reData['data'] = db('article')->alias("a")->join('column c','c.cid = a.columnid')->page($currentPage,$listRows)->select();
             $reData['total'] = db('article')->count();
             return json_encode($reData);
         }else{
@@ -41,6 +37,12 @@ class Article extends Common
      */
     public function add()
     {
+        
+        $reData = [
+            "status" => "0",
+            "msg" => "失败",
+            "data" => []
+        ];
         //判断是不是以POST方式提交过来
         if (request()->isPost()) {
             //获取参数
@@ -51,39 +53,33 @@ class Article extends Common
                 "keywords" => input('keywords'),
                 "content" => input('content'),
                 "click" => input('click'),
+                "state" => input('state'),
                 "time" => time(),
-                "columnid" => input('columnid')
+                "columnid" => input('columnid'),
+                "pic" => input('pic'),
             ];
-            
-            if (input('state') == 'on') {
-                $data['state']=1;
-            }
-            
-            if ($_FILES['pic']['tmp_name']) {
-                $file = request()->file('pic'); //获取传过来的图片
-                $info = $file->move('../public/static/uploads'); //存入uploads
-                $data['pic'] = $info->getSaveName(); //取得保存路径
-            }
             
             //验证
             $validate = new \app\admin\validate\article;
             if (!$validate->check($data)) {
-                $this->error($validate->getError());
-                return;
+                $reData['msg'] = $validate->getError();
+                return json_encode($reData);
             }
             
             //往数据库添加数据
             if (db('article')->insert($data)) {
-                return $this->success('成功！', 'index');
+                $reData['status'] = '1';
+                $reData['msg'] = '添加成功';
+                return json_encode($reData);
             } else {
-                return $this->error('失败！');
+                $reData['msg'] = '添加失败';
+                return json_encode($reData);
             }
             return;
         }
         
         $columns = db('column')->select();
-        $this->assign('columns', $columns);
-        return $this->fetch();
+        return json_encode($columns);
     }
     
     
@@ -92,15 +88,15 @@ class Article extends Common
     {
         // 获取表单上传文件
         $file = request()->file('files');
-
+        
         if (empty($file)) {
             $this->error('请选择上传文件');
         }
         // 移动到框架应用根目录/public/uploads/ 目录下
-        $info = $file->move(ROOT_PATH . 'public' . DS . 'static/uploads');
+        $info = $file->move('../public/static/uploads'); //存入uploads
         if ($info) {
-            $this->success('文件上传成功');
-            echo $info->getFilename();
+            // $this->success('文件上传成功');
+            return $info->getSaveName ();
         } else {
             // 上传失败获取错误信息
             $this->error($file->getError());
@@ -126,19 +122,10 @@ class Article extends Common
                 "content" => input('content'),
                 "click" => input('click'),
                 "time" => time(),
-                "columnid" => input('columnid')
+                "columnid" => input('columnid'),
+                "pic" => input('pic'),
+                "state" => input('state'),
             ];
-            
-            
-            if ($_FILES['pic']['tmp_name']) {
-                $file = request()->file('pic'); //获取传过来的图片
-                $info = $file->move('../public/static/uploads'); //存入uploads
-                $data['pic'] = $info->getSaveName(); //取得保存路径
-            }
-            
-            if (input('state') == 'on') {
-                $data['state']=1;
-            }
             
             //验证
             $validate = new \app\admin\validate\article;
@@ -149,19 +136,15 @@ class Article extends Common
             
             //往数据库添加数据
             if (db('article')->update($data)) {
-                return $this->success('成功！', 'index');
+                $reData['status'] = '1';
+                $reData['msg'] = '修改成功';
+                return json_encode($reData);
             } else {
-                return $this->error('失败！');
+                $reData['msg'] = '修改失败';
+                return json_encode($reData);
             }
             return;
         }
-        $id = input('id');
-        $article = db('article')->find($id);
-        $this->assign('article', $article);
-        
-        $columns = db('column')->select();
-        $this->assign('columns', $columns);
-        return $this->fetch();
     }
     
     /**
@@ -170,13 +153,18 @@ class Article extends Common
      */
     public function del()
     {
+        $reData = [
+            "status" => "0",
+            "msg" => "删除失败",
+            "data" => []
+        ];
         $id = input('id');
         if (db('article')->delete($id)) {
-            return $this->success('成功！', 'index');
+            $reData['status'] = "1";
+            $reData['msg'] = "删除成功";
+            return json_encode($reData);
         } else {
-            return $this->error('失败！');
+            return json_encode($reData);
         }
-        
-        // return $this->fetch();
     }
 }

@@ -47,20 +47,15 @@ export const forAjaxGet = (url, data, callback) => {
   }
   axios.get(url, data)
     .then(function(res) {
-      let newRes = res.data,
-        code = newRes.code,
-        data = newRes.data,
-        msg = newRes.msg,
-        time = newRes.time;
-      if (code == -1) {
-        sessionStorage.setItem("isLogin", "false");
-        router.push({
-          name: 'login'
-        });
-        return false;
-      } else {
-        callback(data, msg, code, time);
-      }
+
+        if (res.data.status == "-1") {
+          router.push({
+            name: 'login'
+          })
+          return false;
+        } else {
+            callback(res);
+        }
       // callback(data,msg,code,time);
     }).catch(function(err) {
       console.log(err);

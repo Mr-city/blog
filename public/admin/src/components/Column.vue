@@ -36,12 +36,12 @@ export default {
 			transitionName: 'slide-left',
 			columns1: [{
 					title: '#',
-					key: 'id',
+					key: 'cid',
 					width: 50,
 				},
 				{
 					title: '栏目名称',
-					key: 'name',
+					key: 'columnname',
 					align: 'center',
 				},
 				{

@@ -15,20 +15,23 @@
 				<Input v-model="formData.desc" type="textarea" :autosize="{minRows: 3,maxRows: 6}" placeholder="请输入文章摘要"></Input>
 			</FormItem>
 			<FormItem label="缩略图" prop="pic">
-				<Upload action="//jsonplaceholder.typicode.com/posts/">
+				<Upload action="/api/blog/public/apia/article/upload" name="files" :on-success="fileSuccess" :on-remove="removeFile">
 					<Button icon="ios-cloud-upload-outline">上传图片</Button>
 				</Upload>
 			</FormItem>
-			<FormItem label="是否推荐" prop="state">
-				<!-- <Switch v-model="formData.state" @on-change="change" /> -->
-				<i-switch v-model="formData.state" size="large" @on-change="change">
-		            <span slot="open">开启</span>
-		            <span slot="close">关闭</span>
-		        </i-switch>
+			<FormItem label="是否推荐" prop="state" >
+				<i-switch v-model="formData.state" size="large" :true-value="1" :false-value="0"  @on-change="change">
+					<span slot="open">开启</span>
+					<span slot="close">关闭</span>
+				</i-switch>
 			</FormItem>
-			<Switch v-model="switch1" @on-change="change" />
+			<FormItem label="所属栏目" prop="author">
+				<Select v-model="formData.columnid" style="width:200px">
+					<Option v-for="item in columnList" :value="item.cid" :key="item.cid">{{ item.columnname }}</Option>
+				</Select>
+			</FormItem>
 			<FormItem label="文章内容">
-				<VueUeditorWrap :config="myConfig"></VueUeditorWrap>
+				<VueUeditorWrap v-model="formData.content" :config="myConfig" :destroy="false"></VueUeditorWrap>
 			</FormItem>
 
 		</Form>
@@ -44,8 +47,8 @@
 <script>
 import * as utils from '@/utils/utils'
 import {
-	COLUMNADD,
-	COLUMNEDIT
+	ARTICLEEDIT,
+	ARTICLEADD
 } from '@/utils/api'
 import {
 	mapState
@@ -66,10 +69,10 @@ export default {
 	},
 	data: () => ({
 		value3: false,
-		switch1:true,
+		switch1: true,
 		myConfig: {
 			// 如果需要上传功能,找后端小伙伴要服务器接口地址
-			// serverUrl: 'http://api.demo.com/ueditor/upload',
+			serverUrl: 'http://localhost/blog/public/apia/article/upload',
 			// 你的UEditor资源存放的路径,相对于打包后的index.html(路由使用history模式注意使用绝对路径或者填写正确的相对路径)
 			UEDITOR_HOME_URL: './static/UEditor/',
 			// 编辑器不自动被内容撑高
@@ -87,24 +90,13 @@ export default {
 			paddingBottom: '53px',
 			position: 'static'
 		},
-		cityList: [{
-			value: '四川',
-			label: '四川'
-		}, ],
-		cityListTo: [{
-			value: '成都',
-			label: '成都'
-		}, ],
-		cityListTob: [{
-			value: '武侯',
-			label: '武侯'
-		}, ],
+		columnList: [],
+		file: null
 
 	}),
 	watch: {
 		value(val) {
 			this.value3 = val
-
 		},
 		value3(val) {
 			this.formData = this.dataShow;
@@ -113,31 +105,40 @@ export default {
 	},
 	created() {
 		this.formData = this.dataShow;
-
+		this.handleColumnList();
 	},
 	computed: {
 		...mapState(['userPage'])
 	},
 	methods: {
 		change(status) {
-			if(status){
+			if (status) {
 				this.$Message.info('已开启推荐');
-			}else{
+			} else {
 				this.$Message.info('已关闭推荐');
 			}
-			
+		},
+		fileSuccess(response, file, fileList) {
+			this.formData.pic = response;
+		},
+		removeFile() {
+			this.formData.pic = "";
+		},
+		handleUpload(file) {
+			this.formData.pic = file;
+			return false;
+		},
+		handleColumnList() { //栏目列表
+			utils.forAjaxGet(ARTICLEADD, {}, (res) => {
+				this.columnList = res.data;
+			})
 		},
 		handleReset(name) {
 			this.$refs[name].resetFields();
 		},
-		handleClose() {
-			this.$router.push({
-				name: 'user'
-			})
-		},
 		handleAdd() {
-			utils.forAjaxPost(COLUMNADD, this.formData, (res) => {
-				console.log(res.data)
+			console.log(this.formData,'11111');
+			utils.forAjaxPost(ARTICLEADD, this.formData, (res) => {
 				if (res.data.status == 1) {
 					this.$Message.success(res.data.msg);
 					this.$refs['formData'].resetFields();
@@ -147,8 +148,8 @@ export default {
 			})
 		},
 		handleEdit() {
-			console.log(this.formData, '222222');
-			utils.forAjaxPost(COLUMNEDIT, this.formData, (res) => {
+			
+			utils.forAjaxPost(ARTICLEEDIT, this.formData, (res) => {
 				if (res.data.status == 1) {
 					this.$Message.success(res.data.msg);
 				} else {
@@ -172,7 +173,19 @@ export default {
     background: #fff;
     z-index: 999;
 }
+.ivu-select .ivu-select-dropdown {
+    z-index: 102px;
+}
+.edui-default .edui-editor {
+    z-index: 100 !important;
+}
+.edui-default .edui-editor-toolbarboxinner,
 .edui-default .edui-toolbar {
     line-height: 20px;
+
+}
+
+.ivu-form-item {
+    margin-bottom: 15px;
 }
 </style>

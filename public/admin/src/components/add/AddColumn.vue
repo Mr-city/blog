@@ -81,7 +81,6 @@ export default {
 		},
 		handleAdd() {
 			utils.forAjaxPost(COLUMNADD, this.formData, (res) =>{
-                console.log(res.data)
                 if(res.data.status == 1){
                     this.$Message.success(res.data.msg);
                     this.$refs['formData'].resetFields();
