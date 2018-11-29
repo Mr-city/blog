@@ -18,6 +18,7 @@
               </form>
           </div>
       </div>
+      <canvas id="triangle-lost-in-space" resize="true"></canvas>
   </div>
 </template>
 
@@ -67,7 +68,7 @@ export default {
     width: 100%;
     height: 100%;
     z-index: 1001;
-    background: url("../assets/images/login_bg.png") no-repeat 50%;
+    background: url("../assets/images/bg-login-c.jpg") no-repeat 50%;
     background-size: cover;
     
     .container-group{
@@ -85,6 +86,7 @@ export default {
         margin: 0 auto;
         background: rgba(255,255,255,0.5);
         box-sizing: border-box;
+        box-shadow: darkgrey 10px 10px 30px 5px ;
     }
 }
 </style>

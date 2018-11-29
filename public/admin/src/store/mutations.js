@@ -1,5 +1,9 @@
 const mutations = {
     
+    changePageCur:function(state,cur){
+        state.pageList.currpage = cur;
+    }
+    
 }
 
 

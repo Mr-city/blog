@@ -1,7 +1,7 @@
 <template lang="html">
   <div>
       <button type="button" name="button" @click="add2">+</button>
-      <span>{{userPage.count}}</span>
+      <span>{{pageList}}</span>
       <button type="button" name="button" @click="min">-</button>
   </div>
 </template>
@@ -13,12 +13,13 @@ export default {
         
     }),
     computed:{
-        ...mapState(['userPage'])
+        ...mapState(['userPage','pageList'])
     },
     methods:{
-        ...mapMutations(['add','minus']),
+        ...mapMutations(['add1','minus']),
         add2(){
-            this.add()
+            this.add1()
+            console.log(this.pageList)
         },
         min(){
             this.minus()

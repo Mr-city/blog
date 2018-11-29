@@ -34,7 +34,7 @@ export default {
 		return {
 			isCollapsed: false,
 			msg: [],
-			transitionName: 'slide-left'
+			transitionName: 'slide-left',
 		}
 	},
 	watch: {
@@ -100,87 +100,90 @@ html {
 	  -webkit-transform: translate(-30px, 0);
 	  transform: translate(-30px, 0);
 	}
-}
-.logo {
-    height: 64px;
-    color: #fff;
-    line-height: 64px;
-    padding-left: 24px;
-    background: #2e3645;
-    span {
-        vertical-align: middle;
-    }
-    .ivu-icon {
-        transition: 0.2s;
-        margin-right: 3px;
-        font-weight: bold;
-    }
-    .ivu-iconb {
-        font-size: 22px;
-        transform: translateX(5px);
-        transition: font-size 0.2s ease 0.2s, transform 0.2s ease 0.2s;
-    }
-}
-.layout {
-    background: #f5f7f9;
-    position: relative;
-    overflow: hidden;
-    height: 100%;
-}
-.ivu-layout {
-    flex-direction: inherit;
-}
-.ivu-layout.ivu-layout-has-sider {
-    height: 100%;
+	
+	.layout {
+	    background: #f5f7f9;
+	    position: relative;
+	    overflow: hidden;
+	    height: 100%;
+	}
+	.ivu-layout {
+	    flex-direction: inherit;
+	}
+	.ivu-layout.ivu-layout-has-sider {
+	    height: 100%;
+	}
+
+	.layout-header-bar {
+	    background: #fff;
+	    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+	}
+
+	.layout-logo-left {
+	    width: 90%;
+	    height: 30px;
+	    background: #5b6270;
+	    border-radius: 3px;
+	    margin: 15px auto;
+	}
+
+	.menu-icon {
+	    transition: all 0.3s;
+	}
+
+	.rotate-icon {
+	    transform: rotate(-90deg);
+	}
+
+	.menu-item span {
+	    display: inline-block;
+	    overflow: hidden;
+	    width: 69px;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	    vertical-align: middle;
+	    transition: width 0.2s ease 0.2s;
+	}
+
+	.menu-item i {
+	    transform: translateX(0px);
+	    transition: font-size 0.2s ease, transform 0.2s ease;
+	    vertical-align: middle;
+	    font-size: 16px;
+	}
+
+	.collapsed-menu span {
+	    width: 0;
+	    transition: width 0.2s ease;
+	}
+
+	.collapsed-menu i {
+	    transform: translateX(5px) translateY(10px);
+	    transition: font-size 0.2s ease 0.2s, transform 0.2s ease 0.2s;
+	    vertical-align: middle;
+	    font-size: 22px;
+	}
+	.logo {
+	    height: 64px;
+	    color: #fff;
+	    line-height: 64px;
+	    padding-left: 24px;
+	    background: #2e3645;
+	    span {
+	        vertical-align: middle;
+	    }
+	    .ivu-icon {
+	        transition: 0.2s;
+	        margin-right: 3px;
+	        font-weight: bold;
+	    }
+	    .ivu-iconb {
+	        font-size: 22px;
+	        transform: translateX(5px);
+	        transition: font-size 0.2s ease 0.2s, transform 0.2s ease 0.2s;
+	    }
+	}
 }
 
-.layout-header-bar {
-    background: #fff;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
-}
 
-.layout-logo-left {
-    width: 90%;
-    height: 30px;
-    background: #5b6270;
-    border-radius: 3px;
-    margin: 15px auto;
-}
-
-.menu-icon {
-    transition: all 0.3s;
-}
-
-.rotate-icon {
-    transform: rotate(-90deg);
-}
-
-.menu-item span {
-    display: inline-block;
-    overflow: hidden;
-    width: 69px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    vertical-align: middle;
-    transition: width 0.2s ease 0.2s;
-}
-
-.menu-item i {
-    transform: translateX(0px);
-    transition: font-size 0.2s ease, transform 0.2s ease;
-    vertical-align: middle;
-    font-size: 16px;
-}
-
-.collapsed-menu span {
-    width: 0;
-    transition: width 0.2s ease;
-}
-
-.collapsed-menu i {
-    transform: translateX(5px) translateY(10px);
-    transition: font-size 0.2s ease 0.2s, transform 0.2s ease 0.2s;
-    vertical-align: middle;
-    font-size: 22px;
-}
 </style>

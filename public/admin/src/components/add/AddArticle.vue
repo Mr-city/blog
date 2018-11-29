@@ -1,6 +1,6 @@
 <template>
 <div id="test">
-	<Drawer :title="title == 'add' ? '新增文章' : '修改文章'" v-model="value3" width="820" :closable="false" :styles="styles">
+	<Drawer :title="titleTop == 'add' ? '新增文章' : '修改文章'" v-model="value3" width="820" :closable="false" :styles="styles">
 		<Form ref="formData" :model="formData" label-position="right" :label-width="100" method="post">
 			<FormItem label="文章标题" prop="title">
 				<Input v-model="formData.title" style="width: 340px;"></Input>
@@ -19,25 +19,25 @@
 					<Button icon="ios-cloud-upload-outline">上传图片</Button>
 				</Upload>
 			</FormItem>
-			<FormItem label="是否推荐" prop="state" >
-				<i-switch v-model="formData.state" size="large" :true-value="1" :false-value="0"  @on-change="change">
+			<FormItem label="是否推荐" prop="state">
+				<i-switch v-model="formData.state" size="large" :true-value="1" :false-value="0" @on-change="change">
 					<span slot="open">开启</span>
 					<span slot="close">关闭</span>
 				</i-switch>
 			</FormItem>
-			<FormItem label="所属栏目" prop="author">
+			<FormItem label="所属栏目" prop="columnid">
 				<Select v-model="formData.columnid" style="width:200px">
 					<Option v-for="item in columnList" :value="item.cid" :key="item.cid">{{ item.columnname }}</Option>
 				</Select>
 			</FormItem>
-			<FormItem label="文章内容">
+			<FormItem label="文章内容" prop="content">
 				<VueUeditorWrap v-model="formData.content" :config="myConfig" :destroy="false"></VueUeditorWrap>
 			</FormItem>
 
 		</Form>
 		<div class="demo-drawer-footer">
-			<Button type="primary" @click="handleAdd" @keyup.enter.native="handleAdd" v-if="title == 'add'">增加</Button>
-			<Button type="primary" @click="handleEdit" v-else="title == 'edit'">修改</Button>
+			<Button type="primary" @click="handleAdd" @keyup.enter="handleAdd" v-if="titleTop == 'add'">增加</Button>
+			<Button type="primary" @click="handleEdit" @keyup.enter="handleEdit" v-else="titleTop == 'edit'">修改</Button>
 			<Button style="margin-left: 8px" @click="handleReset('formData')">重置</Button>
 			<Button style="margin-left: 8px" @click="value3 = false">关闭</Button>
 		</div>
@@ -65,7 +65,7 @@ export default {
 		dataShow: {
 			type: Object,
 		},
-		title: String
+		titleTop: String
 	},
 	data: () => ({
 		value3: false,
@@ -104,8 +104,10 @@ export default {
 		}
 	},
 	created() {
+
 		this.formData = this.dataShow;
 		this.handleColumnList();
+		this.keyupEnter()
 	},
 	computed: {
 		...mapState(['userPage'])
@@ -136,19 +138,26 @@ export default {
 		handleReset(name) {
 			this.$refs[name].resetFields();
 		},
+		keyupEnter() {
+			document.onkeydown = e => {
+				var key = window.event.keyCode;
+				if (key == 13) {
+					this.handleAdd();
+				}
+			}
+		},
 		handleAdd() {
-			console.log(this.formData,'11111');
 			utils.forAjaxPost(ARTICLEADD, this.formData, (res) => {
 				if (res.data.status == 1) {
 					this.$Message.success(res.data.msg);
-					this.$refs['formData'].resetFields();
+					// this.$refs['formData'].resetFields();
 				} else {
 					this.$Message.error(res.data.msg);
 				}
 			})
 		},
 		handleEdit() {
-			
+
 			utils.forAjaxPost(ARTICLEEDIT, this.formData, (res) => {
 				if (res.data.status == 1) {
 					this.$Message.success(res.data.msg);

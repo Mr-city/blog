@@ -42,7 +42,7 @@ class Column extends Common
             // return 'post';
             //获取参数
             $data = [
-                "name" => input('name'),
+                "columnname" => input('columnname'),
             ];
             //验证
             $validate = new \app\admin\validate\column;
@@ -81,8 +81,8 @@ class Column extends Common
         if (request()->isPost()) {
             //获取参数
             $data = [
-                "id" => input('id'),
-                "name" => input('name'),
+                "id" => input('columnid'),
+                "name" => input('columnname'),
             ];
             //验证
             $validate = new \app\admin\validate\column;
@@ -114,7 +114,7 @@ class Column extends Common
             "msg" => "删除失败",
             "data" => []
         ];
-        $id = input('id');
+        $id = input('cid');
         if (db('column')->delete($id)) {
             $reData['status'] = "1";
             $reData['msg'] = "删除成功";

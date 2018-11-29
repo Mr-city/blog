@@ -3,9 +3,9 @@
 	<Button type="primary" icon="md-add" @click="handleAdd">新增</Button>
 	<Table stripe :columns="columns1" :data="data1"></Table>
 	<Page :total="pageLIst.total" :page-size-opts="pageSizeOpts" :page-size="pageLIst.listrows" show-sizer @on-change="changepage" @on-page-size-change="changePageSize" />
-	<AddArticle :value="value" :title="title" @onResultChange="onResultChange" :dataShow="dataShow"></AddArticle>
-	<Modal v-model="modal" title="提示？" @on-ok="ok" style="width:280px;">
-		<p>确定删除吗？</p>
+	<AddArticle :value="value" :titleTop="titleTop" @onResultChange="onResultChange" :dataShow="dataShow"></AddArticle>
+	<Modal v-model="modal" :title="modelMsg.title" @on-ok="ok" :width="modelMsg.width">
+		<p v-html="modelMsg.msg" style="text-align:center;"></p>
 	</Modal>
 	<transition :name="transitionName">
 		<router-view class="child-view"></router-view>
@@ -32,7 +32,7 @@ export default {
 			modal: false,
 			value: false,
 			flag: false,
-			title: '',
+			titleTop: '',
 			transitionName: 'slide-left',
 			imgUrl:'http://localhost/blog/public/static/uploads/',
 			columns1: [{
@@ -48,11 +48,15 @@ export default {
 						return h('img', {
 							attrs: {
 								src: this.imgUrl+params.row.pic,
-								style: 'width: 100px;border-radius: 2px;margin-top:5px;'
+								style: 'width: 100px;border-radius: 2px;margin-top:5px;',
+								class:'imgStyle'
 							},
 							on: {
 								click: () => {
 									this.imgShow(params.index,this.imgUrl+params.row.pic)
+								},
+								mouseover:()=>{
+									// this.imgStyle()
 								}
 							}
 						})
@@ -127,7 +131,11 @@ export default {
 				listrows: 3,
 				total: 0
 			},
-			pageSizeOpts: [3, 6, 9, 12],
+			modelMsg:{
+				title:'',
+				msg:'',
+				width:''
+			},
 			delwatch: 0
 		}
 	},
@@ -148,9 +156,10 @@ export default {
 	},
 	created() {
 		this.handleList()
+		this.pageLIst.listrows = this.listrows
 	},
 	computed: {
-		...mapState(['userPage'])
+		...mapState(['listrows','pageSizeOpts'])
 	},
 	methods: {
 		...mapMutations(['userChangeData']),
@@ -159,7 +168,7 @@ export default {
 			console.log(this.dataShow);
 			this.userChangeData(this.dataShow)
 			this.value = true;
-			this.title = 'edit';
+			this.titleTop = 'edit';
 		},
 		ok() {
 			this.delwatch = this.data1[this.delIndex].id
@@ -178,6 +187,18 @@ export default {
 		remove(index) { //删除一条数据
 			this.modal = true;
 			this.delIndex = index;
+			this.modelMsg.title = '提示？'
+			this.modelMsg.msg = '确定删除吗？'
+			this.modelMsg.width = '260px'
+		},
+		imgShow(index,url){
+			this.modal = true;
+			this.modelMsg.title = '图片预览'
+			this.modelMsg.msg = '<img width="100%" src='+url+' alt="" />'
+			this.modelMsg.width = '520px'
+		},
+		imgStyle(){
+			alert(1)
 		},
 		onResultChange(val) { //添加用户，子组件状态改变，
 			this.value = val;
@@ -186,7 +207,7 @@ export default {
 			this.value = true;
 			this.dataShow = this.formData;
 			this.dataShow.state = 0;
-			this.title = 'add';
+			this.titleTop = 'add';
 		},
 		handleList() { //更新列表
 			utils.forAjaxPost(ARTICLEINDEX, this.pageLIst, (res) => {
@@ -218,5 +239,9 @@ export default {
         margin-top: 20px;
         text-align: center;
     }
+	.imgStyle:hover{
+		background: #000;
+		transform: scale(1.2,1.2);
+	}
 }
 </style>

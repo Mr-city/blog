@@ -82,16 +82,13 @@ export default {
 			],
 			data1: [],
 			dataShow: {},
-			formData: {
-				name: '',
-			},
+			formData: {},
 			delIndex: 0,
 			pageLIst: {
 				currpage: 1,
 				listrows: 3,
 				total: 0
 			},
-			pageSizeOpts: [3, 6, 9, 12],
 			delwatch: 0
 		}
 	},
@@ -119,23 +116,24 @@ export default {
 	},
 	created() {
 		this.handleList()
+		this.pageLIst.listrows = this.listrows
 	},
 	computed: {
-		...mapState(['userPage'])
+		...mapState(['listrows','pageSizeOpts'])
+		
 	},
 	methods: {
-		...mapMutations(['userChangeData']),
 		show(index) { //编辑
 			this.dataShow = this.data1[index];
-			this.userChangeData(this.dataShow)
 
 			this.value = true;
 			this.title = 'edit';
 		},
 		ok() {
-			this.delwatch = this.data1[this.delIndex].id
+			this.delwatch = this.data1[this.delIndex].cid
+			console.log(this.delwatch);
 			utils.forAjaxPost(COLUMNDEL, {
-				id: this.data1[this.delIndex].id
+				cid: this.data1[this.delIndex].cid
 			}, (res) => {
 				if (res.data.status == 1) {
 					this.$Message.success(res.data.msg)
@@ -147,7 +145,6 @@ export default {
 
 		},
 		remove(index) { //删除一条数据
-			console.log(index);
 			this.modal = true;
 			this.delIndex = index;
 		},
@@ -167,7 +164,6 @@ export default {
 		},
 		changepage(cur) { //切换分页
 			this.pageLIst.currpage = cur
-            console.log(cur);
 			utils.forAjaxPost(COLUMNINDEX, this.pageLIst, (res) => {
 				this.data1 = res.data.data;
 			})

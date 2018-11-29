@@ -104,7 +104,6 @@ export default {
 	},
     created(){
         this.formData = this.dataShow;
-        
     },
 	computed:{
 		...mapState(['userPage'])
@@ -119,8 +118,11 @@ export default {
 			})
 		},
 		handleAdd() {
-			this.formData.city = this.formData.model11 + ',' + this.formData.model12 + ',' + this.formData.model13
+			if(this.formData.model11){
+				this.formData.city = this.formData.model11 + ',' + this.formData.model12 + ',' + this.formData.model13
+			}
 			utils.forAjaxPost(USERADD, this.formData, (res) =>{
+				console.log(this.formData);
                 console.log(res.data)
                 if(res.data.status == 1){
                     this.$Message.success(res.data.msg);

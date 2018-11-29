@@ -2,8 +2,8 @@
 <div id="test">
 	<Drawer :title="title == 'add' ? '新增栏目' : '修改栏目'" v-model="value3" width="620" :closable="false" :styles="styles">
 		<Form ref="formData" :model="formData" label-position="top"  method="post">
-			<FormItem label="栏目名称" prop="name">
-				<Input v-model="formData.name" style="width: 240px;"></Input>
+			<FormItem label="栏目名称" prop="columnname">
+				<Input v-model="formData.columnname" style="width: 240px;"></Input>
 			</FormItem>
 		</Form>
 		<div class="demo-drawer-footer">
@@ -80,6 +80,7 @@ export default {
 			})
 		},
 		handleAdd() {
+			console.log(this.formData);
 			utils.forAjaxPost(COLUMNADD, this.formData, (res) =>{
                 if(res.data.status == 1){
                     this.$Message.success(res.data.msg);
