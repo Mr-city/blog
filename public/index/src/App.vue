@@ -1,12 +1,27 @@
 <template>
-  <div id="app">
-    <router-view/>
-  </div>
+<div id="app">
+	<div class="body-container container-fluid">
+        <a class="menu-btn" href="javascript:void(0)">
+            <i class="ion ion-grid"></i>
+        </a>
+        <div class="row justify-content-center">
+			<div class="col-lg-2 col-md-3 col-12 menu_block">
+            	<Menu></Menu>
+			</div>
+			<div class="col-lg-10 col-md-9 col-12 body_block  align-content-center">
+            	<router-view></router-view>
+			</div>
+        </div>
+    </div>
+</div>
 </template>
 
 <script>
+import Menu from '@/components/base/Menu'
 export default {
-  name: 'App'
+    components:{
+        Menu
+    }
 }
 </script>
 

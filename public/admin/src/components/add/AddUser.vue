@@ -47,8 +47,8 @@
 			</FormItem>
 		</Form>
 		<div class="demo-drawer-footer">
-            <Button type="primary" @click="handleAdd" v-if="title == 'add'">增加</Button>
-            <Button type="primary" @click="handleEdit" v-else="title == 'edit'">修改</Button>
+            <Button type="primary" @click="handleAdd" @keyup.enter="handleAdd" v-if="title == 'add'">增加</Button>
+            <Button type="primary" @click="handleEdit" @keyup.enter="handleEdit" v-else="title == 'edit'">修改</Button>
             <Button style="margin-left: 8px" @click="handleReset('formData')">重置</Button>
             <Button style="margin-left: 8px" @click="value3 = false">关闭</Button>
 		</div>
@@ -98,17 +98,25 @@ export default {
 		},
 		value3(val) {
             this.formData = this.dataShow;
-            console.log(this.formData,'222222');
 			this.$emit("onResultChange", val); //③组件内对myResult变更后向外部发送事件通知
 		}
 	},
     created(){
         this.formData = this.dataShow;
+		this.keyupEnter()
     },
 	computed:{
 		...mapState(['userPage'])
 	},
 	methods: {
+		keyupEnter() {
+			document.onkeydown = e => {
+				var key = window.event.keyCode;
+				if (key == 13) {
+					this.title == 'add' ? this.handleAdd() : this.handleEdit()
+				}
+			}
+		},
 		handleReset(name) {
 			this.$refs[name].resetFields();
 		},

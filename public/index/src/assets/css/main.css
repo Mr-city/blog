@@ -1621,10 +1621,10 @@ img {
 .menu_nav li a:focus {
   background-color: #99896e;
 }
-.menu_nav li.active a {
+/* .menu_nav li.active a {
   background-color: #99896e;
   color: #ffffff;
-}
+} */
 .menu_nav .sub-menu {
   position: absolute;
   right: 0;

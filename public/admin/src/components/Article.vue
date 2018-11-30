@@ -2,8 +2,10 @@
 <div id="user">
 	<Button type="primary" icon="md-add" @click="handleAdd">新增</Button>
 	<Table stripe :columns="columns1" :data="data1"></Table>
-	<Page :total="pageLIst.total" :page-size-opts="pageSizeOpts" :page-size="pageLIst.listrows" show-sizer @on-change="changepage" @on-page-size-change="changePageSize" />
+	<Page v-show="flag" :total="pageLIst.total" :page-size-opts="pageSizeOpts" :page-size="pageLIst.listrows" show-sizer @on-change="changepage" @on-page-size-change="changePageSize" />
+	
 	<AddArticle :value="value" :titleTop="titleTop" @onResultChange="onResultChange" :dataShow="dataShow"></AddArticle>
+	
 	<Modal v-model="modal" :title="modelMsg.title" @on-ok="ok" :width="modelMsg.width">
 		<p v-html="modelMsg.msg" style="text-align:center;"></p>
 	</Modal>
@@ -211,8 +213,13 @@ export default {
 		},
 		handleList() { //更新列表
 			utils.forAjaxPost(ARTICLEINDEX, this.pageLIst, (res) => {
-				this.data1 = res.data.data;
-				this.pageLIst.total = res.data.total;
+				if(res.data.data.length != 0){
+					this.flag = true;
+					this.data1 = res.data.data;
+					this.pageLIst.total = res.data.total;
+				}else{
+					this.flag = false;
+				}
 			})
 		},
 		changepage(cur) { //切换分页

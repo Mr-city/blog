@@ -43,6 +43,7 @@ class Column extends Common
             //获取参数
             $data = [
                 "columnname" => input('columnname'),
+                "columnurl" => input('columnurl'),
             ];
             //验证
             $validate = new \app\admin\validate\column;
@@ -82,7 +83,8 @@ class Column extends Common
             //获取参数
             $data = [
                 "id" => input('columnid'),
-                "name" => input('columnname'),
+                "columnname" => input('columnname'),
+                "columnurl" => input('columnurl'),
             ];
             //验证
             $validate = new \app\admin\validate\column;

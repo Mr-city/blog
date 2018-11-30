@@ -1,5 +1,6 @@
 <?php
 namespace app\apia\controller;
+
 use think\Controller;
 
 class Common extends Controller
@@ -15,10 +16,9 @@ class Common extends Controller
             "status" => "-1",
             "msg" => "请登录",
         ];
-        if(!session('name')){
-           json($resData)->send();
-           exit();
+        if (!session('name')) {
+            json($resData)->send();
+            exit();
         }
     }
-
 }

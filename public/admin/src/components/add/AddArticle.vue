@@ -142,7 +142,7 @@ export default {
 			document.onkeydown = e => {
 				var key = window.event.keyCode;
 				if (key == 13) {
-					this.handleAdd();
+					this.title == 'add' ? this.handleAdd() : this.handleEdit()
 				}
 			}
 		},
