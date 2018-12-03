@@ -20,6 +20,7 @@ class Login extends Controller
                 case '1':
                     $resData['status'] = '1';
                     $resData['msg'] = '登录成功';
+                    // session('name',$data.name);
                     return json_encode($resData);
                     break;
                 case '3':

@@ -25,7 +25,7 @@ class Article extends Common
             // return 'post';
             $currentPage = input('currpage');
             $listRows = input('listrows');
-            $reData['data'] = db('article')->alias("a")->join('column c','c.cid = a.columnid')->page($currentPage,$listRows)->select();
+            $reData['data'] = db('article')->alias("a")->join('column c','c.cid = a.columnid')->page($currentPage,$listRows)->order("a.time","desc")->select();
             $reData['total'] = db('article')->count();
             return json_encode($reData);
         }else{

@@ -2,7 +2,6 @@
 
 <div class="blog">
   <div class="row justify-content-center">
-      <LeftArticle></LeftArticle>
       <div class="col-lg-8 col-md-12 col-12">
           <article class="blog_card" v-for="item in dataList">
               <div class="blog_card_top">
@@ -16,10 +15,10 @@
               </div>
               <div class="blog_card_bottom">
                   <h4>
-                      <router-link :to="{ name: 'article', params: {id:item.id,content:item.content} }">{{item.title}}</router-link>
-                      <!-- <a href="javascirpt:;" @click="handleItem(item)">
+                      <!-- <router-link :to="{ name: 'detail', params: {id:item.id,content:item} }">{{item.title}}</router-link> -->
+                      <a href="javascript:void(0);" @click="handleItem(item)">
                           {{item.title}}
-                      </a> -->
+                      </a>
                   </h4>
                   <div class="meta_data">
                       <span>灰色调博客</span>
@@ -84,6 +83,7 @@
               </div>
           </article> -->
       </div>
+      <LeftArticle></LeftArticle>
   </div>
 </div>
 
@@ -93,6 +93,7 @@
 import * as utils from '@/utils/utils'
 import {ARTICLEINDEX} from '@/utils/api'
 import LeftArticle from '@/components/base/leftArticle'
+import {mapState,mapMutations} from 'vuex'
 export default {
     components:{
         LeftArticle
@@ -105,13 +106,19 @@ export default {
         this.init()
     },
     methods:{
+        ...mapMutations(['changeArtList','getSaveSession','changeRefData']),
         init(){
             utils.forAjaxPost(ARTICLEINDEX,{},(res)=>{
                 this.dataList = res.data.data;
             })
         },
         handleItem(item){
-            console.log(item);
+            this.changeArtList(item)
+            this.$router.push({
+                name:'detail',
+                params: {id:item.id,}
+                
+            })
         }
     }
 }

@@ -11,8 +11,11 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "marked": "^0.5.2",
+    "mavon-editor": "^2.6.17",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -30,6 +33,7 @@
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^1.1.4",
     "friendly-errors-webpack-plugin": "^1.6.1",
+    "highlight.js": "^9.13.1",
     "html-webpack-plugin": "^2.30.1",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
@@ -45,6 +49,7 @@
     "shelljs": "^0.7.6",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
+    "vue-highlight.js": "^2.2.0",
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.5.2",

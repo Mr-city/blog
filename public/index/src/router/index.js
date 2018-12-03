@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Blog from '@/components/Blog'
 import About from '@/components/About'
-import Article from '@/components/Article'
+import Detail from '@/components/Detail'
 import Error from '@/components/base/404'
 
 
@@ -26,9 +26,9 @@ export default new Router({
           component:Blog
       },
       {
-          path:'/article',
-          name:'article',
-          component:Article
+          path:'/detail/:id',
+          name:'detail',
+          component:Detail
       },
       {
           path:'/about',

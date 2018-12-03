@@ -58,7 +58,6 @@ export default {
         init(){
             utils.forAjaxPost(COLUMNINDEX,{},(res)=>{
                 this.dataList = res.data.data;
-                console.log(this.dataList);
             })
         }    
     },

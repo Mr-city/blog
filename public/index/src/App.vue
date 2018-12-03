@@ -18,10 +18,33 @@
 
 <script>
 import Menu from '@/components/base/Menu'
+import {mapMutations} from 'vuex'
 export default {
     components:{
         Menu
-    }
+    },
+	data:()=>({
+		flag:false
+	}),
+	updated() {
+        // 存储本地数据
+        let state = this.$store.state;
+        state = JSON.stringify(state);
+        sessionStorage.state = state;
+        // console.log(state,'state');
+    },
+	created(){
+		this.flag = true;
+		this.init()
+	},
+	methods:{
+		...mapMutations(['getSaveSession','changeRefData','changeaad']),
+		init(){
+			let obj = sessionStorage.state;
+	        obj = JSON.parse(obj);
+	        this.changeRefData(obj.blogArticle);
+		}
+	}
 }
 </script>
 

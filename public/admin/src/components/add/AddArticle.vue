@@ -31,7 +31,15 @@
 				</Select>
 			</FormItem>
 			<FormItem label="文章内容" prop="content">
-				<VueUeditorWrap v-model="formData.content" :config="myConfig" :destroy="false"></VueUeditorWrap>
+				<RadioGroup v-model="animal">
+			        <Radio label="副文本"></Radio>
+			        <Radio label="markdown"></Radio>
+			    </RadioGroup>
+				<mavon-editor v-model="formData.content" v-show="animal == 'markdown'"/>
+				<!-- <div v-show="animal != 'markdown'">
+					<VueUeditorWrap v-model="formData.content" :config="myConfig" :destroy="false" ></VueUeditorWrap>
+				</div> -->
+				
 			</FormItem>
 
 		</Form>
@@ -68,6 +76,8 @@ export default {
 		titleTop: String
 	},
 	data: () => ({
+		decontent:'',
+		animal:'副文本',
 		value3: false,
 		switch1: true,
 		myConfig: {
@@ -181,6 +191,9 @@ export default {
     text-align: right;
     background: #fff;
     z-index: 999;
+}
+.v-note-wrapper{
+	z-index: 102 !important;
 }
 .ivu-select .ivu-select-dropdown {
     z-index: 102px;

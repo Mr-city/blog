@@ -7,11 +7,12 @@ import iView from 'iview'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import store from './store'
+import mavonEditor from 'mavon-editor'
+import 'mavon-editor/dist/css/index.css'
 import 'iview/dist/styles/iview.css'
 
-
-console.log(store)
 Vue.use(iView)
+Vue.use(mavonEditor)
 Vue.config.productionTip = false
 
 // Vue.component('Message',Message);
