@@ -39,7 +39,6 @@
 				<!-- <div v-show="animal != 'markdown'">
 					<VueUeditorWrap v-model="formData.content" :config="myConfig" :destroy="false" ></VueUeditorWrap>
 				</div> -->
-				
 			</FormItem>
 
 		</Form>
@@ -77,7 +76,7 @@ export default {
 	},
 	data: () => ({
 		decontent:'',
-		animal:'副文本',
+		animal:'markdown',
 		value3: false,
 		switch1: true,
 		myConfig: {
@@ -107,6 +106,7 @@ export default {
 	watch: {
 		value(val) {
 			this.value3 = val
+			console.log(val,'val');
 		},
 		value3(val) {
 			this.formData = this.dataShow;
@@ -114,10 +114,9 @@ export default {
 		}
 	},
 	created() {
-
 		this.formData = this.dataShow;
 		this.handleColumnList();
-		this.keyupEnter()
+		// this.keyupEnter()
 	},
 	computed: {
 		...mapState(['userPage'])
@@ -151,8 +150,10 @@ export default {
 		keyupEnter() {
 			document.onkeydown = e => {
 				var key = window.event.keyCode;
+				e.stopPropagation();
 				if (key == 13) {
-					this.title == 'add' ? this.handleAdd() : this.handleEdit()
+					this.titleTop == 'add' ? this.handleAdd() : this.handleEdit()
+					// console.log(this.titleTop);
 				}
 			}
 		},

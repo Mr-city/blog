@@ -135,9 +135,6 @@ export default {
 		delwatch() { //删除一条数据更新界面
 			this.handleList()
 			
-		},
-		data1(){
-			console.log("1");
 		}
 	},
 	created() {
@@ -175,7 +172,6 @@ export default {
 
 		},
 		remove(index) { //删除一条数据
-			console.log(index);
 			this.modal = true;
 			this.delIndex = index;
 		},

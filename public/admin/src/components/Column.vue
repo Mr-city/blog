@@ -109,14 +109,7 @@ export default {
 			this.handleList()
 		},
 		delwatch() { //删除一条数据更新界面
-			console.log('222');
 			this.handleList()
-		},
-		pageLIst: {
-			handler(newValue, oldValue) {
-				console.log(newValue)
-			},
-			deep: true
 		}
 	},
 	created() {

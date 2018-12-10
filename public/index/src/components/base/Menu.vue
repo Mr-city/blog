@@ -69,7 +69,7 @@ export default {
     position: fixed;
     top: 0;
     flex: 0 0 16.666667%;
-    max-width: 16.666667%;
+    max-width: 250px;
     .router-link-active {
         background-color: #99896e;
         color: #ffffff;

@@ -1,0 +1,28 @@
+---------------------------------------------------------------
+[ 2018-12-08T23:19:52+08:00 ] 127.0.0.1 POST localhost/blog/public/api/article/index
+[运行时间：0.178573s] [吞吐率：5.60req/s] [内存消耗：2,940.21kb] [文件加载：70]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eher8m9ubffctihghjg41gtlaq',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8081/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.116',
+  'origin' => 'http://localhost:8081',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '2',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002807s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_article` [ RunTime:0.054114s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_article` `a` INNER JOIN `zp_column` `c` ON `c`.`cid`=`a`.`columnid` ORDER BY `a`.`time` DESC LIMIT 0,20 [ RunTime:0.003012s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000335s ] mysql:host=localhost;port=3306;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_article` LIMIT 1 [ RunTime:0.000850s ]

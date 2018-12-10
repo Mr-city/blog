@@ -11,6 +11,10 @@ import Login from '@/components/Login'
 
 Vue.use(Router)
 
+
+
+
+
 export default new Router({
   routes: [{
       path: '/',
@@ -20,21 +24,33 @@ export default new Router({
       path: '/Login',
       name: 'login',
       component: Login,
+      meta:{
+          cname:'登录'
+      }
     },
     {
       path: '/home',
       name: 'home',
       component: Home,
+      meta:{
+          cname:'首页'
+      }
     },
     {
       path: '/user',
       name: 'user',
       component: User,
+      meta:{
+          cname:'用户组'
+      }
     },
     {
       path: '/column',
       name: 'column',
-      component: Column
+      component: Column,
+      meta:{
+          cname:'栏目管理'
+      }
     },
     {
       path: '/test',
@@ -44,7 +60,10 @@ export default new Router({
     {
       path: '/article',
       name: 'article',
-      component: Article
+      component: Article,
+      meta:{
+          cname:'文章管理'
+      }
     },
     {
         path:'/404',

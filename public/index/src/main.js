@@ -4,9 +4,20 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store'
+import VueLazyload from 'vue-lazyload'
+import VueAwesomeSwiper from 'vue-awesome-swiper';
+import 'swiper/dist/css/swiper.css'
 
 Vue.config.productionTip = false
-router.afterEach((to,from,next) => {
+Vue.use(VueAwesomeSwiper);
+Vue.use(VueLazyload, { //配置懒加载 
+  preLoad: 1.3,
+  error: require('@/assets/img/loading.gif'),
+  loading: require('@/assets/img/loading.gif'),
+  attempt: 1
+})
+
+router.afterEach((to,from,next) => { //路由跳转 回到顶部
   window.scrollTo(0,0);
 })
 /* eslint-disable no-new */

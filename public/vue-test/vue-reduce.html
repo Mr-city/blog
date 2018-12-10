@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
-    
-    
-    
-    
+
+    <script type="text/javascript">
+        var array = [1, '1', 1, 2, 3, 3, 2, 4];
+        var tmpObj = {};
+        var result = [];
+        array.forEach(function(a) {
+            var key = (typeof a) + a;
+            // console.log(key,tmpObj)
+            if (!tmpObj[key]) {
+                tmpObj[key] = 'o';
+                result.push(a);
+            }
+        });
+        console.log(result);
+    </script>
+
+
 </body>
+
 </html>

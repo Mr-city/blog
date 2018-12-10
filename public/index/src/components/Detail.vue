@@ -6,12 +6,15 @@
       <div class="col-lg-8 col-md-12 col-12">
           <article class="blog_card">
               <div class="blog_card_top">
-                  <img :src="imgUrl+blogArticle.artList.pic" alt="blog title " />
+                  <img v-lazy="imgUrl+blogArticle.artList.pic" alt="blog title " />
                   <div class="blog_date">
-                      31
-                      <span>
-                          october 2017
-                      </span>
+                      {{blogArticle.artList.time.split('-')[2]}}
+                      <p>
+                         {{monthsInEng[blogArticle.artList.time.split('-')[1]]}} 
+                     </p>
+                     <p>
+                         {{blogArticle.artList.time.split('-')[0]}}
+                     </p>
                   </div>
               </div>
               <div class="blog_card_bottom">
@@ -21,11 +24,14 @@
                       </a>
                   </h4>
                   <div class="meta_data">
-                      <span>灰色调博客</span>
-                      <span>vue react</span>
+                      <span>作者：{{blogArticle.artList.author}}</span>
+                      <span>{{blogArticle.artList.keywords}}</span>
                       <span>3 评论</span>
                   </div>
-                  <p v-html="content"></p>
+                  <div class="markdown-body">
+                      <div v-html="content" ref="content"></div>
+                  </div>
+                  
               </div>
           </article>
       </div>
@@ -53,10 +59,10 @@ marked.setOptions({
 	renderer: new marked.Renderer(),
 	gfm: true,
 	tables: true,
-	breaks: false,
+	breaks: true,
 	pedantic: false,
 	sanitize: false,
-	smartLists: true,
+	smartLists: false,
 	smartypants: false,
 	highlight: function(code, lang) {
 		if (lang && hljs.getLanguage(lang)) {
@@ -72,6 +78,7 @@ export default {
 	},
 	data: () => ({
 		imgUrl: 'http://localhost/blog/public/static/uploads/',
+        monthsInEng:['January','February','March','April','May','June','July','Aguest','September','October','November','December'],
 	}),
 	created() {
 		this.init()
@@ -80,22 +87,30 @@ export default {
 		...mapState(['blogArticle']),
 		content() {
 			// return this.blogArticle.artList.content;
-			return marked(this.blogArticle.artList.content || '', {
-				sanitize: true
-			});
+			return marked(this.blogArticle.artList.content || '');
 		}
 	},
 	methods: {
-
 		init() {
 			// this.content()
 		}
 	},
+    mounted(){
+        console.log(this.$refs.content.getElementsByTagName('pre'),'1231231231231231');
+        var elm = this.$refs.content.getElementsByTagName('pre')
+        
+        for(var i = 0; i<elm.length; i++){
+            console.log(elm[i]);
+            elm[i].innerHTML = elm[i].innerHTML+"<div>1231231212312312312312</div>"
+        }
+        
+        
+    }
 }
 </script>
 
-<style lang="less">
-pre {
+<style scoped lang="less">
+.blog_card .blog_card_top pre {
     display: block;
     margin-top: 0;
     margin-bottom: 1rem;
@@ -103,7 +118,23 @@ pre {
     white-space: pre-wrap;
     word-wrap: break-word;
     color: #A2A2AE; 
-    background: #F8F8F8;
+    background: #F8F8F8 !important;
     padding: 10px 20px;
+}
+.blog_date p{
+    font-size: 12px;
+    margin: 0;
+    margin-top: 3px;
+    line-height: 1.8;
+}
+.blog_date p:nth-child(1){
+    margin-top: 10px;
+}
+.blog_card .blog_card_top .blog_date{
+    width: auto;
+    padding: 8px 3px;
+}
+.blog_card .blog_card_top .blog_card_img{
+    overflow: hidden;
 }
 </style>

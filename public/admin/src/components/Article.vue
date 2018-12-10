@@ -1,11 +1,12 @@
 <template>
 <div id="user">
 	<Button type="primary" icon="md-add" @click="handleAdd">新增</Button>
-	<Table stripe :columns="columns1" :data="data1"></Table>
+	<Button type="error" icon="ios-remove" @click="handleSeRemove">批量删除</Button>
+	<Table stripe :columns="columns1" :data="data1" @on-selection-change="changeSeRem"></Table>
 	<Page v-show="flag" :total="pageLIst.total" :page-size-opts="pageSizeOpts" :page-size="pageLIst.listrows" show-sizer @on-change="changepage" @on-page-size-change="changePageSize" />
-	
+
 	<AddArticle :value="value" :titleTop="titleTop" @onResultChange="onResultChange" :dataShow="dataShow"></AddArticle>
-	
+
 	<Modal v-model="modal" :title="modelMsg.title" @on-ok="ok" :width="modelMsg.width">
 		<p v-html="modelMsg.msg" style="text-align:center;"></p>
 	</Modal>
@@ -36,8 +37,13 @@ export default {
 			flag: false,
 			titleTop: '',
 			transitionName: 'slide-left',
-			imgUrl:'http://localhost/blog/public/static/uploads/',
+			imgUrl: 'http://localhost/blog/public/static/uploads/',
 			columns1: [{
+					type: 'selection',
+					width: 60,
+					align: 'center'
+				},
+				{
 					title: '#',
 					key: 'id',
 					width: 50,
@@ -49,15 +55,15 @@ export default {
 					render: (h, params) => {
 						return h('img', {
 							attrs: {
-								src: this.imgUrl+params.row.pic,
+								src: this.imgUrl + params.row.pic,
 								style: 'width: 100px;border-radius: 2px;margin-top:5px;',
-								class:'imgStyle'
+								class: 'imgStyle'
 							},
 							on: {
 								click: () => {
-									this.imgShow(params.index,this.imgUrl+params.row.pic)
+									this.imgShow(params.index, this.imgUrl + params.row.pic)
 								},
-								mouseover:()=>{
+								mouseover: () => {
 									// this.imgStyle()
 								}
 							}
@@ -133,12 +139,14 @@ export default {
 				listrows: 3,
 				total: 0
 			},
-			modelMsg:{
-				title:'',
-				msg:'',
-				width:''
+			modelMsg: {
+				title: '',
+				msg: '',
+				width: ''
 			},
-			delwatch: 0
+			delwatch: 0,
+			remSelectId:[],
+			delflag:false
 		}
 	},
 	watch: {
@@ -161,7 +169,7 @@ export default {
 		this.pageLIst.listrows = this.listrows
 	},
 	computed: {
-		...mapState(['listrows','pageSizeOpts'])
+		...mapState(['listrows', 'pageSizeOpts'])
 	},
 	methods: {
 		...mapMutations(['userChangeData']),
@@ -173,9 +181,10 @@ export default {
 			this.titleTop = 'edit';
 		},
 		ok() {
-			this.delwatch = this.data1[this.delIndex].id
+			this.delwatch = this.delflag ? this.remSelectId : this.data1[this.delIndex].id
+			console.log(this.delwatch,'watch');
 			utils.forAjaxPost(ARTICLEDEL, {
-				id: this.data1[this.delIndex].id
+				id: this.delwatch
 			}, (res) => {
 				if (res.data.status == 1) {
 					this.$Message.success(res.data.msg)
@@ -184,6 +193,7 @@ export default {
 					this.$Message.error(res.data.msg)
 				}
 			})
+			this.remSelectId = []
 
 		},
 		remove(index) { //删除一条数据
@@ -192,32 +202,53 @@ export default {
 			this.modelMsg.title = '提示？'
 			this.modelMsg.msg = '确定删除吗？'
 			this.modelMsg.width = '260px'
+			this.delflag = false
 		},
-		imgShow(index,url){
+		imgShow(index, url) {
 			this.modal = true;
 			this.modelMsg.title = '图片预览'
-			this.modelMsg.msg = '<img width="100%" src='+url+' alt="" />'
+			this.modelMsg.msg = '<img width="100%" src=' + url + ' alt="" />'
 			this.modelMsg.width = '520px'
 		},
-		imgStyle(){
+		imgStyle() {
 			alert(1)
 		},
 		onResultChange(val) { //添加用户，子组件状态改变，
 			this.value = val;
 		},
+		changeSeRem(selection){//checkbox 选中项
+			selection.filter((item)=>{
+				this.remSelectId.push(item.id)
+			});
+			this.remSelectId = Array.from(new Set(this.remSelectId))
+		},
+		handleSeRemove(){ //批量删除
+			if(this.remSelectId.length == 0){
+				this.$Message.error('请选择一项')
+			}else{
+				this.modal = true;
+				this.delIndex = this.remSelectId;
+				this.modelMsg.title = '提示？'
+				this.modelMsg.msg = '确定删除吗？'
+				this.modelMsg.width = '300px'
+				this.delflag = true
+			}
+		},
 		handleAdd() { //显示添加页面
+			this.formData = {}
 			this.value = true;
 			this.dataShow = this.formData;
+			this.dataShow.columnid = 13
 			this.dataShow.state = 0;
 			this.titleTop = 'add';
 		},
 		handleList() { //更新列表
 			utils.forAjaxPost(ARTICLEINDEX, this.pageLIst, (res) => {
-				if(res.data.data.length != 0){
+				if (res.data.data.length != 0) {
 					this.flag = true;
 					this.data1 = res.data.data;
 					this.pageLIst.total = res.data.total;
-				}else{
+				} else {
 					this.flag = false;
 				}
 			})
@@ -241,14 +272,15 @@ export default {
 #user {
     .ivu-btn-primary {
         margin-bottom: 10px;
+		vertical-align: top;
     }
     .ivu-page {
         margin-top: 20px;
         text-align: center;
     }
-	.imgStyle:hover{
-		background: #000;
-		transform: scale(1.2,1.2);
-	}
+    .imgStyle:hover {
+        background: #000;
+        transform: scale(1.2,1.2);
+    }
 }
 </style>

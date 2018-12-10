@@ -121,15 +121,17 @@ export const setSessionStorage = (sname, sdata) => {
 
 //时间戳转换时间
 export function formatDate(date, fmt) {
-  if (/(y+)/.test(fmt)) {
-    fmt = fmt.replace(RegExp.$1, (date.getFullYear() + '').substr(4 - RegExp.$1.length));
-  }
+  // if (/(y+)/.test(fmt)) {
+  //   fmt = fmt.replace(RegExp.$1, (date.getFullYear() + '').substr(4 - RegExp.$1.length));
+  // }
+  var time = new Date(parseInt(date)*1000)
   let o = {
-    'M+': date.getMonth() + 1,
-    'd+': date.getDate(),
-    'h+': date.getHours(),
-    'm+': date.getMinutes(),
-    's+': date.getSeconds()
+    'Y+':time.getFullYear(),
+    'M+': time.getMonth(),
+    'D+': time.getDate(),
+    'h+': time.getHours(),
+    'm+': time.getMinutes(),
+    's+': time.getSeconds()
   };
   for (let k in o) {
     if (new RegExp(`(${k})`).test(fmt)) {

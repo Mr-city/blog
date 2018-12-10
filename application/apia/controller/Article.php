@@ -148,7 +148,7 @@ class Article extends Common
     }
     
     /**
-     * [del description] 删除一条数据
+     * [del description] 删除数据
      * @return [type] [description]
      */
     public function del()
@@ -159,6 +159,7 @@ class Article extends Common
             "data" => []
         ];
         $id = input('id');
+        // dump($id);exit;
         if (db('article')->delete($id)) {
             $reData['status'] = "1";
             $reData['msg'] = "删除成功";
